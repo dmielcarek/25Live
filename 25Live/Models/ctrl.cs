@@ -109,7 +109,7 @@ namespace _25Live.Models
             
 
         }
-
+        // The method takes start index, length and value of a field and concatnate it with line variable
         public string concatNewField(string line, int colNewField, int lenNewField, string valueNewField )
         {
             var spacesToAdd = 0; // Initialising it for reuse.

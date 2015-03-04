@@ -1,8 +1,25 @@
 ﻿
 @{
-    ViewBag.Title = "Datain";
+    ViewBag.Title = "25Live";
 }
 
-<h2>Datain</h2>
-<p>File datain is created.</p>
+<h2>25Live</h2>
+
+@{
+    string tag = "";
+    
+    if (Session["message"] != null)
+    {
+
+        
+        tag = "<p>"+Session["message"]+"<p>";
+
+    }
+    else
+    {
+        tag = "<p>Something went wrong. Please contact the administration</p>";
+    }
+
+    @Html.Raw(tag);
+}
 

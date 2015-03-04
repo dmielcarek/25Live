@@ -25,20 +25,12 @@ namespace _25Live.Controllers
                 var colSection = int.Parse(allConfigurations["ColSection"]);
                 var lenSection = int.Parse(allConfigurations["LengthSection"]);
                 var colDays = int.Parse(allConfigurations["ColDays"]);
-                var lenDays = int.Parse(allConfigurations["LengthDays"]);
-                var abbrSun = allConfigurations["Sunday"];
-                var abbrMon = allConfigurations["Monday"];
-                var abbrTue = allConfigurations["Tuesday"];
-                var abbrWed = allConfigurations["Wednesday"];
-                var abbrThur = allConfigurations["Thursday"];
-                var abbrFri = allConfigurations["Friday"];
-                var abbrSat = allConfigurations["Saturday"];
+                var lenDays = int.Parse(allConfigurations["LengthDays"]);               
                 var colStartHours = int.Parse(allConfigurations["ColStartHours"]);
                 var colStartMinutes = int.Parse(allConfigurations["ColStartMinutes"]);
                 var colFinishtHours = int.Parse(allConfigurations["ColFinishtHours"]);
                 var colFinishtMinutes = int.Parse(allConfigurations["ColFinishtMinutes"]);
-                var colAP = int.Parse(allConfigurations["ColAP"]);
-                var defaultAPVal = allConfigurations["DefaultAP"];
+                var colAP = int.Parse(allConfigurations["ColAP"]);               
                 var colEnrollment = int.Parse(allConfigurations["ColEnrollment"]);
                 var lenEnrollment = int.Parse(allConfigurations["LengthEnrollment"]);
                 var colRoomName = int.Parse(allConfigurations["ColRoomName"]);
@@ -69,6 +61,7 @@ namespace _25Live.Controllers
                 //Call the stored procedure to get data
                 //loop through the records
                 String classRows = obj.getData();
+                String message = "";
                 if (!string.IsNullOrEmpty(classRows))
                 {
                     var objects = JArray.Parse(classRows); // parse as array 
@@ -126,6 +119,8 @@ namespace _25Live.Controllers
                         line = obj.concatNewField(line, colCRN, lenCRN, crn);                      
                         line += "\n";//System.Environment.NewLine;
 
+
+
                         //Write to a file
                         term = term.ToString().Trim();
                         var filename = term + ".dat";
@@ -143,12 +138,14 @@ namespace _25Live.Controllers
                                 var newPath = archivePath + newFileName;
                                 // Move the existing file to archive folder
                                 System.IO.File.Move(path, newPath);
+                                message += "File " + newFileName + " has been moved to " + archivePath + ".";
                                                              
                             }
                             //Create new file and write the line in it
                             if (!System.IO.File.Exists(path))
                             {
                                 System.IO.StreamWriter file = new System.IO.StreamWriter(path);
+                                message += " A new file named " + filename + " is created at location " + allConfigurations["FilePath"] + ".";
                                 //TextWriter tw = new StreamWriter(path);
                                 file.WriteLine(line);
                                 file.Close();
@@ -178,10 +175,12 @@ namespace _25Live.Controllers
 
                     }
                 }
+                Session["message"] = message;
             }
             catch(Exception ex)
             {
                 Console.WriteLine("Exception", ex);
+                Session["exception"] = ex.Message.ToString();
                 return View("ExceptionOccured");
             }
             
