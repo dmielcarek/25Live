@@ -162,6 +162,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\CreateDatain\Datain.cshtml" />
     <Content Include="Views\CreateDatain\ExceptionOccured.cshtml" />
+    <Content Include="Views\CreateDatain\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
