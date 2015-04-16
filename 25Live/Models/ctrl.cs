@@ -71,13 +71,16 @@ namespace _25Live.Models
                 String cs = System.Configuration.ConfigurationManager.ConnectionStrings["ClassDal"].ConnectionString;
                 SqlConnection con = new SqlConnection(cs);
                 SqlCommand com = new SqlCommand("Execute usp_25LiveDataInFile", con);
+                com.CommandTimeout = 300;// 5 min
                 com.Connection = con;
                 con.Open();
 
                 SqlDataAdapter da = new SqlDataAdapter(com);
-                 Task.Delay(10000);
+                 
                 // Delay(3000);
+               
                 da.Fill(dt);
+                //Task.Delay(50000);
                 System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
                 List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
                 Dictionary<string, object> row;
@@ -241,13 +244,13 @@ namespace _25Live.Models
                         line = concatNewField(line, colCourse, lenCourse, courseName);
                         line = concatNewField(line, colTerm, lengthTerm, term);
                         line = concatNewField(line, colCRN, lenCRN, crn);
-                        line += "\n";//System.Environment.NewLine;
+                        //line += System.Environment.NewLine;
 
 
 
                         //Write to a file
                         term = term.ToString().Trim();
-                        var filename = term + ".dat";
+                        var filename = "datain"+term + ".dat";
                         string path = allConfigurations["FilePath"] + filename;
 
                         if (codeRanFlag == 0)
