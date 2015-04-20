@@ -212,7 +212,7 @@ namespace _25Live.Models
                         var section = root.GetValue("Section").ToString().Trim();
                         var catalog = root.GetValue("Catalog").ToString().Trim(); // Course Number
                         var term = root.GetValue("term").ToString().Trim(); // YearQuarterID
-                        var instructorName = root.GetValue("InstructorName").ToString().Trim();
+                        var instructorEmail = root.GetValue("WorkEmail").ToString().Trim();
                         var assignment = root.GetValue("AssignmentField").ToString().Trim();
                         var meetingNumber = root.GetValue("MeetingNumber").ToString().Trim();
                         //generate line
@@ -240,7 +240,7 @@ namespace _25Live.Models
                         line = concatNewField(line, colASM, lenASM, assignment);
                         var Event = ""; // This field is optional and we will just fill this with spaces.
                         line = concatNewField(line, colEvent, lenEvent, Event);
-                        line = concatNewField(line, colInstructor, lenInstructor, instructorName);
+                        line = concatNewField(line, colInstructor, lenInstructor, instructorEmail);
                         line = concatNewField(line, colCourse, lenCourse, courseName);
                         line = concatNewField(line, colTerm, lengthTerm, term);
                         line = concatNewField(line, colCRN, lenCRN, crn);
