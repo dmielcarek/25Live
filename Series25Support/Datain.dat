@@ -1,0 +1,659 @@
+WELD  102   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    HSM                                                                    OXY WELDING AND BRAZING  B561  WELD 102001K601 
+WELD  105   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    SHIELDED METAL ARC WELDI B561  WELD 105001K607 
+WELD  106   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    SHIELDED METAL ARC W. II B561  WELD 106001K609 
+WELD  110   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    FLUX CORED ARC WELDING   B561  WELD 110001K611 
+WELD  111   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    GAS METAL ARC WELDING    B561  WELD 111001K613 
+WELD  114   001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    GAS TUNGSTEN ARC WELD I  B561  WELD 114001K615 
+WELD  115R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    GAS TUNGSTEN ARC WELD II B561  WELD 115R001K629
+WELD  122R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    CERTIFICATION            B561  WELD 122R001K619
+WELD  138R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    CERIFICATION SMAW        B561  WELD 138R001K623
+WELD  139R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    CERT FCAW (OPT WELD 122) B561  WELD 139R001K637
+WELD  140R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    CERTIFICATION GMAW/FCAW  B561  WELD 140R001K627
+WELD  141R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    CERT GTAW (OPT WELD 122) B561  WELD 141R001K639
+WELD  142R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    PIPE WELDING I           B561  WELD 142R001K631
+WELD  143R  001  MTWRF      0800 1430 H 0040 A1       20150706 20150811 1    VSM                                                                    PIPE WELDING II          B561  WELD 143R001K633
+WELDS 108   001  MTWRF      0800 1430 H 0020 A1       20150706 20150811 1    VSM       dparker@rtc.edu                                              WELDING BRUSH-UP         B561  WELDS108001K608 
+WELDS 102   001  MW         1730 2130 H 0020 A1       20150706 20150914 1    HSM       ken.johnson@rtc.edu                                          WELDING (OXY-ACE & ARC)  B561  WELDS102001K602 
+WELDS 110   001  MW         1730 2130 H 0020 A1       20150706 20150914 1    VSM       ken.johnson@rtc.edu                                          WELDING (MIG & TIG)      B561  WELDS110001K612 
+WELDS 106   001  S          0800 1430 H 0020 A1       20150711 20150829 1    ASM       nnguyen@RTC.edu                                              WELDING                  B561  WELDS106001K606 
+WELDS 102   001  TR         1730 2130 H 0020 A1       20150707 20150910 1    HSM                                                                    WELDING (OXY-ACE & ARC)  B561  WELDS102001K604 
+WELDS 110   001  TR         1730 2130 H 0020 A1       20150707 20150910 1    VSM                                                                    WELDING (MIG & TIG)      B561  WELDS110001K614 
+WELDS 124   001  TR         1730 2130 H 0020 A1       20150707 20150910 1    VSM                                                                    SOLDADURA                B561  WELDS124001K624 
+CONST 266   001  S          0830 1300 H 0015 A24      20150711 20150919 1    ASM       kel-guindy@RTC.edu                                           ADV COMPUTERS F/CONST I  B561  CONST266001K787 
+BAST  076   001  MTWR       0900 1200 H 0075 AUB      20150706 20150827 1    HSM       smarushia@RTC.edu                                            BASIC HS COMPLETION      B561  BAST 076001D922 
+BAST  096   001  MTWR       0900 1200 H 0075 AUB      20150706 20150827 1    VSM       smarushia@RTC.edu                                            ADV HS COMPLETION        B561  BAST 096001D932 
+CBE   103   001  MW         0700 1100 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103001A809 
+CBE   103   001  MW         0700 1100 H 0024 AUB      20150706 20150811 3    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103001K809 
+CBE   103   001  MW         0700 1100 H 0024 AUB      20150706 20150811 5    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103001P809 
+CBE   107   001  MW         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                REFRIG AND A/C FUNDAMENT B561  CBE  107001A825 
+CBE   107   001  MW         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                REFRIG AND A/C FUNDAMENT B561  CBE  107001K825 
+CBE   107   001  MW         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                REFRIG AND A/C FUNDAMENT B561  CBE  107001P825 
+CBE   103   002  MW         1700 2100 H 0024 AUB      20150706 20150811 2    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103002A811 
+CBE   103   002  MW         1700 2100 H 0024 AUB      20150706 20150811 4    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103002K811 
+CBE   103   002  MW         1700 2100 H 0024 AUB      20150706 20150811 6    ASM       gkane@RTC.edu                                                NATIONAL ELECTRICAL CODE B561  CBE  103002P811 
+CBE   208   001  TR         0700 1100 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208001A905 
+CBE   208   001  TR         0700 1100 H 0024 AUB      20150706 20150811 3    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208001K905 
+CBE   208   001  TR         0700 1100 H 0024 AUB      20150706 20150811 5    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208001P905 
+CBE   213   002  TR         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                MOTOR CONTROL PRINCIPLES B561  CBE  213002P921 
+CBE   213   002  TR         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                MOTOR CONTROL PRINCIPLES B561  CBE  213002A921 
+CBE   213   002  TR         1200 1600 H 0024 AUB      20150706 20150811 1    ASM       gkane@RTC.edu                                                MOTOR CONTROL PRINCIPLES B561  CBE  213002K921 
+CBE   208   002  TR         1700 2100 H 0024 AUB      20150706 20150811 2    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208002A907 
+CBE   208   002  TR         1700 2100 H 0024 AUB      20150706 20150811 4    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208002K907 
+CBE   208   002  TR         1700 2100 H 0024 AUB      20150706 20150811 6    ASM       gkane@RTC.edu                                                INSTR FOR STATIONARY ENG B561  CBE  208002P907 
+DENT  139   002  MTWRF      0800 1430 H 0022 B110     20150706 20150811 1    HSM       sadams@RTC.edu                                               LABORATORY PROCEDURES II B561  DENT 139002H175 
+DENT  137   002  MTWRF      0800 1430 H 0022 B110     20150706 20150811 2    VSM       sadams@RTC.edu                                               LABORATORY PROCEDURES I  B561  DENT 137002H179 
+DENT  194   002  MTWRF      0800 1430 H 0022 B110     20150706 20150811 1    VSM       sadams@RTC.edu                                               INTERNSHIP III           B561  DENT 194002H177 
+DENT  105   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    HSM       cberrysmith@rtc.edu                                          EXPANDED FUNCTIONS I     B561  DENT 105001H111 
+DENT  113   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          CLINICAL ASSISTING II    B561  DENT 113001H115 
+DENT  137   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          LABORATORY PROCEDURES I  B561  DENT 137001H173 
+DENT  138   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          BUSINESS ADMINISTRATION  B561  DENT 138001H125 
+DENT  149   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          PHARMACOLOGY & THERAPEUT B561  DENT 149001H143 
+DENT  152   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          NUTRITION                B561  DENT 152001H169 
+DENT  155   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          RADIOLOGY III            B561  DENT 155001H151 
+DENT  191   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          JOB SEEKING SKILLS       B561  DENT 191001H159 
+DENT  192   001  MTWRF      0800 1430 H 0022 B110     20150706 20150918 1    VSM       cberrysmith@rtc.edu                                          INTERNSHIP I             B561  DENT 192001H161 
+CST   101   001  MTWRF      0800 1430 H 0020 B114     20150706 20150811 1    HSM       amorris@RTC.edu                                              CENTRAL SERV TECH FUNDAM B561  CST  101001H931 
+CST   102   001  MTWRF      0800 1430 H 0020 B114     20150706 20150811 1    VSM       amorris@RTC.edu                                              HEALTHCARE PROV FA/CPR   B561  CST  102001H933 
+CST   103   001  MTWRF      0800 1430 H 0020 B114     20150706 20150811 1    VSM       amorris@RTC.edu                                              CENTRAL SERV TECH SKILLS B561  CST  103001H935 
+NURS  233R  001  MTWRF      0800 1430 H 0032 B118     20150706 20150811 1    HSM       ehinkson@RTC.edu                                             NCLEX-RN PREPARATION     B561  NURS 233R001H573
+NURS  203   001  MTWRF      0800 1430 H 0032 B118     20150706 20150813 1    HSM       ehinkson@RTC.edu                                             MAJOR CHRONIC ALTER HCN  B561  NURS 203001H741 
+NURS  207   001  MTWRF      0800 1430 H 0032 B118     20150706 20150813 1    VSM       ehinkson@RTC.edu                                             MAJOR CHRON ALTER HCN LB B561  NURS 207001H743 
+NURS  208R  003  MTWRF      0800 1430 H 0032 B120     20150706 20150826 1    HSM       smcconico@rtc.edu                                            MAJOR ACUTE ALT HC NEEDS B561  NURS 208R003H746
+NURS  295R  003  MTWRF      0800 1430 H 0032 B120     20150706 20150826 1    VSM       smcconico@rtc.edu                                            MAJOR ACUTE ALTER CLINIC B561  NURS 295R003H760
+BAST  036   001  MTR        0700 0800 H 0025 B124     20150706 20150811 1    ASM                                                                    STUDENT SUCC F/PHAR TECH B561  BAST 036001D906 
+PHAR  191   001  MTWRF      0800 1430 H 0026 B124     20150706 20150811 1    ASM       ldspencer@RTC.edu                                            PHARM PRACTICE-INTERN II B561  PHAR 191001H641 
+MEDA  104   001  MTWRF      0800 1430 H 0028 B125     20150706 20150811 1    HSM       jrobinson@rtc.edu                                            ANATOMY & PHYSIOLOGY II  B561  MEDA 104001H205 
+MEDA  128   001  MTWRF      0800 1430 H 0028 B125     20150706 20150811 1    VSM       jrobinson@rtc.edu                                            CLINICAL PROCEDURES III  B561  MEDA 128001H231 
+SURG  102   002  MTWRF      0800 1430 H 0016 B126     20150706 20150811 1    HSM       ajserba@RTC.edu                                              HC PRO FIRST AID/CPR,AED B561  SURG 102002H403 
+AMATH 166G  002  MTWRF      0800 1430 H 0016 B126     20150706 20150811 1    VSM       ajserba@RTC.edu                                              APPLIED MATHEMATICS      B561  AMATH166G002H443
+SURG  107   002  MTWRF      0800 1430 H 0016 B126     20150706 20150811 1    VSM       ajserba@RTC.edu                                              SURGICAL PROCEDURES II   B561  SURG 107002H407 
+SURG  115   002  MTWRF      0800 1430 H 0016 B126     20150706 20150811 1    VSM       ajserba@RTC.edu                                              SKILLS LABORATORY II     B561  SURG 115002H417 
+ANES  193   001  MTWRF      0800 1430 H 0020 B204     20150706 20150811 1    HSM       gwest@RTC.edu                                                ANESTHESIA TECH CLIN III B561  ANES 193001H833 
+ANES  194   001  MTWRF      0800 1430 H 0020 B204     20150706 20150811 1    VSM       gwest@RTC.edu                                                CERTIFICATION EXAM PREP  B561  ANES 194001H834 
+HCPCS 101   001  S          0800 1430 H 0020 B204     20150808 20150808 1    ASM       pzydek@RTC.edu                                               HEALTHCARE PROVID CPR/RE B561  HCPCS101001F101 
+HCPCS 102   001  S          0800 1630 H 0020 B204     20150718 20150725 1    ASM       cberrysmith@rtc.edu                                          HC PRO FIRST AID/CPR&AED B561  HCPCS102001F104 
+SURG  113   001  MTWRF      0800 1430 H 0016 B208     20150706 20150811 1    HSM                                                                    PROFESSIONAL PREP II     B561  SURG 113001H415 
+SURG  170   001  MTWRF      0800 1430 H 0016 B208     20150706 20150811 1    VSM                                                                    COMMUNICATIONS           B561  SURG 170001H429 
+SURG  196   001  MTWRF      0800 1430 H 0016 B208     20150706 20150811 1    VSM                                                                    OPER ROOM CLIN. PRAC III B561  SURG 196001H441 
+BAST  059   001  MTWRF      0930 1230 H 0020 BCHCREE  20150706 20150828 1    HSM       sshipunova@RTC.edu                                           ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E112 
+BAST  059   001  MTWRF      0930 1230 H 0020 BCHCREE  20150706 20150828 1    HSM                                                                    ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E113 
+BAST  061   001  MTWRF      0930 1230 H 0025 BCHCREE  20150706 20150828 13   VSM       sshipunova@RTC.edu                                           ESL LEVEL II             B561  BAST 061001E212 
+BAST  061   001  MTWRF      0930 1230 H 0025 BCHCREE  20150706 20150828 14   VSM                                                                    ESL LEVEL II             B561  BAST 061001E213 
+BAST  062   001  MTWRF      0930 1230 H 0025 BCHCREE  20150706 20150828 3    VSM       sshipunova@RTC.edu                                           ESL LEVEL III            B561  BAST 062001E312 
+BAST  059   001  MTWR       1800 2000 H 0020 BIRCREE  20150706 20150827 1    HSM       aismail@rtc.edu                                              ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E125 
+BAST  061   001  MTWR       1800 2000 H 0025 BIRCREE  20150706 20150827 12   VSM       aismail@rtc.edu                                              ESL LEVEL II             B561  BAST 061001E225 
+BAST  062   001  MTWR       1800 2000 H 0025 BIRCREE  20150706 20150827 4    VSM       aismail@rtc.edu                                              ESL LEVEL III            B561  BAST 062001E325 
+BAST  068   001  MW         1130 1430 H 0020 C103     20150706 20150810 1    ASM                                                                    ESL FOR ONLINE LEARNING  B561  BAST 068001E850 
+ENGL& 101   001  TWR        1115 1420 H 0025 C104     20150707 20150813 1    ASM       jhudspeth@RTC.edu                                            ENGLISH COMPOSITION      B561  ENGL&101001G142 
+PSYC& 200   001  MWF        0800 1100 H 0030 C107     20150706 20150811 1    ASM                                                                    DEVELOPMENTAL LIFESPAN   B561  PSYC&200001G178 
+PSYC& 100   001  MWF        1130 1430 H 0030 C107     20150706 20150811 1    ASM                                                                    GENERAL PSYCHOLOGY       B561  PSYC&100001G536 
+COMP  080   001  MWF        0800 1100 H 0024 C109     20150706 20150814 1    HSM       leyler@RTC.edu                                               WRITING IMPROVEMENT I    B561  COMP 080001G130 
+COMP  090   001  MWF        0800 1100 H 0024 C109     20150706 20150814 1    VSM       leyler@RTC.edu                                               WRITING IMPROVEMENT II   B561  COMP 090001G136 
+COMP  100   001  MWF        0800 1100 H 0024 C109     20150706 20150814 1    VSM       leyler@RTC.edu                                               APPLIED COMPOSITION      B561  COMP 100001G134 
+COMP  090   001  MW         1130 1435 H 0025 C110     20150707 20150813 1    VSM       khiggins@RTC.edu                                             WRITING IMPROVEMENT II   B561  COMP 090001G172 
+ENGL& 102   HYB  MW         1730 1930 H 0025 C110     20150706 20150814 1    ASM       jhudspeth@RTC.edu                                            WRITING FROM RESEARCH    B561  ENGL&102HYBN756 
+ENGL& 101   001  MWF        0800 1105 H 0025 C110     20150706 20150814 1    ASM       khiggins@RTC.edu                                             ENGLISH COMPOSITION      B561  ENGL&101001G158 
+COMP  080   001  TWR        1130 1435 H 0025 C110     20150707 20150813 1    HSM       khiggins@RTC.edu                                             WRITING IMPROVEMENT I    B561  COMP 080001G170 
+COMP  100   001  TWR        1130 1435 H 0025 C110     20150707 20150813 1    VSM       khiggins@RTC.edu                                             APPLIED COMPOSITION      B561  COMP 100001G174 
+NA    131   001  MTWRF                H 0020 CLNICAL  20150729 20150807 1    ASM       pcrawford@RTC.edu                                            NURSING ASSISTANT PRACT  B561  NA   131001H907 
+PHLEB 191   001  MTWRF      0800 1630 H 0015 CLNICAL  20150813 20150827 1    HSM                                                                    PHLEBOTOMY TECH PRACTIC  B561  PHLEB191001H947 
+PHLEB 191   002  MTWRF      0800 1630 H 0015 CLNICAL  20150813 20150827 2    VSM                                                                    PHLEBOTOMY TECH PRACTIC  B561  PHLEB191002H957 
+BAST  052   001  MT         0800 1100 H 0025 D102A    20150706 20150707 1    ASM                                                                    EDUCATIONAL PLAN & GOAL  B561  BAST 052001D840 
+BAST  052   001  MT         1800 2100 H 0025 D102A    20150706 20150707 1    ASM       ctran@rtc.edu                                                EDUCATIONAL PLAN & GOAL  B561  BAST 052001D850 
+BAST  026   001  MTW        0800 1200 H 0023 D102A    20150713 20150715 1    ASM                                                                    ESL ORIENT/GOAL SETTING  B561  BAST 026001E700 
+BAST  026   001  MTW        1200 1600 H 0023 D102A    20150713 20150715 1    ASM       ggergen@RTC.edu                                              ESL ORIENT/GOAL SETTING  B561  BAST 026001E718 
+BAST  026   001  MTW        1700 2100 H 0023 D102A    20150713 20150715 1    ASM       ctran@rtc.edu                                                ESL ORIENT/GOAL SETTING  B561  BAST 026001E710 
+BAST  019   HYB  S          1000 1300 H 0025 D102A    20150711 20150808 1    ASM                                                                    HYBRID ESL               B561  BAST 019HYBE796 
+BAST  022   002  MTWR       0800 1100 H 0025 D102B    20150706 20150811 1    HSM                                                                    BILINGUAL SPANISH/ABEIII B561  BAST 022002D742 
+BAST  020   002  MTWR       0800 1100 H 0020 D102B    20150706 20150811 1    VSM                                                                    BILINGUAL SPANISH/ABE I  B561  BAST 020002D700 
+BAST  021   002  MTWR       0800 1100 H 0025 D102B    20150706 20150811 1    VSM                                                                    BILINGUAL SPANISH/ABE II B561  BAST 021002D721 
+BAST  023   002  MTWR       0800 1100 H 0025 D102B    20150706 20150811 1    VSM                                                                    BILINGUAL SPANISH/ABE IV B561  BAST 023002D763 
+BAST  077   002  MTWR       0800 1100 H 0025 D102B    20150706 20150811 1    VSM                                                                    BILINGUAL SPAN/ENG GED   B561  BAST 077002D861 
+BAST  078   002  MTWR       0800 1100 H 0025 D102B    20150706 20150811 1    VSM                                                                    BILLING SPAN/ENG ADV GED B561  BAST 078002D864 
+BAST  022   002  MTWR       1800 2100 H 0025 D102B    20150706 20150811 1    HSM       mvelastegui@RTC.edu                                          BILINGUAL SPANISH/ABEIII B561  BAST 022002D743 
+BAST  020   002  MTWR       1800 2100 H 0020 D102B    20150706 20150811 1    VSM       mvelastegui@RTC.edu                                          BILINGUAL SPANISH/ABE I  B561  BAST 020002D701 
+BAST  021   002  MTWR       1800 2100 H 0025 D102B    20150706 20150811 1    VSM       mvelastegui@RTC.edu                                          BILINGUAL SPANISH/ABE II B561  BAST 021002D722 
+BAST  023   002  MTWR       1800 2100 H 0025 D102B    20150706 20150811 1    VSM       mvelastegui@RTC.edu                                          BILINGUAL SPANISH/ABE IV B561  BAST 023002D764 
+BAST  077   002  MTWR       1800 2100 H 0025 D102B    20150706 20150811 1    VSM       mvelastegui@RTC.edu                                          BILINGUAL SPAN/ENG GED   B561  BAST 077002D862 
+BAST  078   002  MTWR       1800 2100 H 0025 D102B    20150706 20150811 1    VSM       mvelastegui@RTC.edu                                          BILLING SPAN/ENG ADV GED B561  BAST 078002D865 
+BAST  061   001  MTWR       1130 1430 H 0025 D109     20150706 20150811 15   ASM                                                                    ESL LEVEL II             B561  BAST 061001E220 
+BAST  062   001  MTWR       1800 2100 H 0025 D109     20150706 20150811 2    HSM       LEgbejimba@RTC.edu                                           ESL LEVEL III            B561  BAST 062001E322 
+BAST  063   001  MTWR       1800 2100 H 0025 D109     20150706 20150811 11   VSM       LEgbejimba@RTC.edu                                           ESL LEVEL IV             B561  BAST 063001E421 
+BAST  062   001  MTWRF      0800 1100 H 0025 D109     20150706 20150811 8    ASM       LEgbejimba@RTC.edu                                           ESL LEVEL III            B561  BAST 062001E314 
+BAST  017   001  MW         1700 1800 H 0025 D109     20150706 20150810 1    ASM       szugschwerdt@RTC.edu                                         ESL WRITING F/LIFE, WORK B561  BAST 017001E811 
+BAST  061   001  MTWR       1430 1720 H 0020 D119     20150706 20150811 10   HSM       dallen@RTC.edu                                               ESL LEVEL II             B561  BAST 061001E231 
+BAST  062   001  MTWR       1430 1720 H 0025 D119     20150706 20150811 5    VSM       dallen@RTC.edu                                               ESL LEVEL III            B561  BAST 062001E331 
+BAST  063   001  MTWR       1430 1720 H 0025 D119     20150706 20150811 9    VSM       dallen@RTC.edu                                               ESL LEVEL IV             B561  BAST 063001E431 
+BAST  059   001  MTWR       1800 2100 H 0025 D119     20150706 20150811 1    ASM       dallen@RTC.edu                                               ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E116 
+BAST  061   001  MTWRF      0800 1100 H 0025 D119     20150706 20150811 9    ASM       jali@RTC.edu                                                 ESL LEVEL II             B561  BAST 061001E214 
+BAST  062   003  MTWRF      1130 1430 H 0025 D119     20150706 20150811 6    ASM       ekardasheva@RTC.edu                                          ESL LEVEL III            B561  BAST 062003E313 
+BAST  062   001  MTWR       1800 2100 H 0025 D122     20150706 20150811 7    ASM       rroush@RTC.edu                                               ESL LEVEL III            B561  BAST 062001E321 
+BAST  064   001  MTWRF      1140 1430 H 0025 D122     20150706 20150811 1    HSM       stheizen@rtc.edu                                             ESL LEVEL V              B561  BAST 064001E513 
+BAST  058   001  MTWRF      1140 1430 H 0025 D122     20150706 20150811 1    VSM       stheizen@rtc.edu                                             ESL LEVEL VI             B561  BAST 058001E613 
+BAST  019   HYB  MTWR       0900 1100 H 0025 D123     20150706 20150811 1    ASM       marthur@rtc.edu                                              HYBRID ESL               B561  BAST 019HYBE806 
+BAST  019   HYB  MTWR       1900 2100 H 0025 D123     20150706 20150811 1    ASM       shanke@rtc.edu                                               HYBRID ESL               B561  BAST 019HYBE799 
+BAST  017   001  TR         0800 0900 H 0025 D123     20150707 20150811 3    ASM       ekardasheva@RTC.edu                                          ESL WRITING F/LIFE, WORK B561  BAST 017001E809 
+BAST  017   001  TR         1130 1230 H 0025 D123     20150707 20150811 4    ASM       ctran@rtc.edu                                                ESL WRITING F/LIFE, WORK B561  BAST 017001E810 
+BAST  057   001  TR         1230 1430 H 0030 D123     20150707 20150811 1    ASM       marthur@rtc.edu                                              ESL ORAL COMM BEG(HYBRID B561  BAST 057001E812 
+BAST  016   HYB  TR         1445 1645 H 0025 D123     20150707 20150811 1    ASM       marthur@rtc.edu                                              ENGLISH PRONUNC.FOR ESL  B561  BAST 016HYBE793 
+BAST  017   HYB  TR         1800 1900 H 0025 D123     20150707 20150811 2    ASM       ekardasheva@RTC.edu                                          ESL WRITING F/LIFE, WORK B561  BAST 017HYBE794 
+BAST  019   HYB  MTWR       0900 1100 H 0025 D126     20150706 20150811 1    ASM       ctran@rtc.edu                                                HYBRID ESL               B561  BAST 019HYBE798 
+BAST  061   001  MTWR       1800 2100 H 0025 D126     20150706 20150811 11   ASM       sshipunova@RTC.edu                                           ESL LEVEL II             B561  BAST 061001E222 
+BAST  063   001  MTWRF      1140 1430 H 0025 D126     20150706 20150811 10   ASM       pmoheb@rtc.edu                                               ESL LEVEL IV             B561  BAST 063001E413 
+BAST  048   001  W          1445 1645 H 0025 D126     20150706 20150805 1    ASM       egraham@RTC.edu                                              ESL ORAL COMMUNIC/INTERM B561  BAST 048001E800 
+MART  172   003  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    HSM       pbaeder@rtc.edu                                              INDUSTRIAL COMMUNICATION B561  MART 172003K119 
+AMATH 175S  001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM                                                                    INDUSTRIAL MATH FOR THER B561  AMATH175S001K165
+MART  111   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              INDUSTRIAL DIRECT CURREN B561  MART 111001K423 
+MART  112   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              IND ALTERNATING CURRENT  B561  MART 112001K425 
+MART  120   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              IND'L SOLID STATE ELECTR B561  MART 120001K427 
+MART  206   002  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM                                                                    GAS CONTROL SYSTEMS      B561  MART 206002K127 
+MART  217   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              CLOTHES DRYERS           B561  MART 217001K126 
+MART  217   002  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 2    VSM                                                                    CLOTHES DRYERS           B561  MART 217002K129 
+MART  218   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              STACK LAUNDRY EQUIPMENT  B561  MART 218001K131 
+MART  220   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              COMBINATION WASHER/DRYER B561  MART 220001K133 
+MART  222   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              COOKING EQUIPMENT        B561  MART 222001K135 
+MART  238   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM                                                                    HVAC SYSTEM AND CONTROLS B561  MART 238001K151 
+MART  243   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM                                                                    ICEMAKER EQUIPMENT       B561  MART 243001K153 
+MART  291   001  MTWRF      0730 1400 H 0040 E401A    20150706 20150811 1    VSM       pbaeder@rtc.edu                                              JOB SEARCH SKILLS        B561  MART 291001K155 
+ELECS 115   001  MW         1800 2200 H 0015 E405     20150706 20150916 1    ASM       ameakin@rtc.edu                                              BASIC ELECTRICITY        B561  ELECS115001Q401 
+ELECS 116   001  TR         1800 2200 H 0015 E405     20150707 20150910 1    ASM       ameakin@rtc.edu                                              PLANT & MACH. ELECTR. II B561  ELECS116001Q402 
+PLAST 101   001  MTWRF      0700 1530 H 0025 E416     20150706 20150811 1    ASM                                                                    PLASTERER'S APPRENTICESH B561  PLAST101001P103 
+MTEC  123   002  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    HSM       apohlman@RTC.edu                                             MACHINING FUNDAMENT MILL B561  MTEC 123002K315 
+AMATH 188S  001  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    VSM       apohlman@RTC.edu                                             TRIGONOMETRY F/MACHINING B561  AMATH188S001K359
+MTEC  140   001  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    VSM       apohlman@RTC.edu                                             GEOMETRIC DIMENSION TOLE B561  MTEC 140001K321 
+MTEC  172   002  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    VSM       apohlman@RTC.edu                                             COMMUNICATIONS II        B561  MTEC 172002K325 
+MTEC  235   002  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    VSM       hhatem@RTC.edu                                               CNC V                    B561  MTEC 235002K343 
+MTEC  290   002  MTWRF      0800 1430 H 0020 F102     20150706 20150811 1    VSM       hhatem@RTC.edu                                               JOB SEARCH SKILLS        B561  MTEC 290002K347 
+MTECS 113   001  MW         1730 2130 H 0014 F104     20150706 20150914 1    HSM       tuchison@RTC.edu                                             MACHINING/LATHE          B561  MTECS113001K306 
+MTECS 115   001  MW         1730 2130 H 0014 F104     20150706 20150914 1    VSM       tuchison@RTC.edu                                             MACHINING/MILLING        B561  MTECS115001K308 
+MTECS 113   001  S          0830 1700 H 0014 F104     20150711 20150912 1    HSM       tuchison@RTC.edu                                             MACHINING/LATHE          B561  MTECS113001K312 
+MTECS 115   001  S          0830 1700 H 0014 F104     20150711 20150912 1    VSM       tuchison@RTC.edu                                             MACHINING/MILLING        B561  MTECS115001K314 
+MTECS 220   001  R          1730 2130 H 0012 F109     20150709 20150910 1    HSM       fmartinez@rtc.edu                                            INTRO TO MASTERCAM       B561  MTECS220001K324 
+MTECS 222   001  R          1730 2130 H 0012 F109     20150709 20150910 1    VSM       fmartinez@rtc.edu                                            ADVANCED MASTERCAM       B561  MTECS222001K326 
+MTECS 123   001  T          1730 2130 H 0020 F109     20150707 20150908 1    VSM       fmartinez@rtc.edu                                            ADVANCED SOLIDWORKS      B561  MTECS123001K318 
+MTECS 122   001  T          1730 2130 H 0020 F109     20150707 20150918 1    HSM       fmartinez@rtc.edu                                            INTRO TO SOLID WORKS     B561  MTECS122001K316 
+MTECS 224   001  MTWRF      0800 1430 H 0018 F111     20150716 20150805 1    ASM       ddickson@rtc.edu                                             MACHINING & MATH ESSENT  B561  MTECS224001K328 
+CONST 268   001  MWR        1630 1930 H 0020 F111     20150708 20150730 1    ASM       jlee@RTC.edu                                                 INTRO TO SUSTAINABILITY  B561  CONST268001K768 
+CONST 105   001  TR         1430 1730 H 0020 F111     20150707 20150820 1    ASM       mvelastegui@RTC.edu                                          SPANISH FOR CONSTR SUPER B561  CONST105001K705 
+NA    101   001  MTWRF      0800 1430 H 0020 H101A    20150706 20150810 2    HSM       pcrawford@RTC.edu                                            FUND OF NURSING ASSISTAN B561  NA   101001H901 
+HLTH  100   001  MTWRF      0800 1430 H 0020 H101A    20150706 20150810 2    VSM       pcrawford@RTC.edu                                            TOOLS FOR SUCCESS        B561  HLTH 100001H909 
+NA    103   001  MTWRF      0800 1430 H 0020 H101A    20150706 20150810 1    VSM       pcrawford@RTC.edu                                            BASIC TECHNICAL SKILLS   B561  NA   103001H903 
+NA    105   001  MTWRF      0800 1430 H 0020 H101A    20150706 20150810 2    VSM       pcrawford@RTC.edu                                            PRINCIPLES OF A&P,RESTOR B561  NA   105001H905 
+NA    101   002  MW         1830 2100 H 0020 H101A    20150706 20150811 1    HSM       rkaur@RTC.edu                                                FUND OF NURSING ASSISTAN B561  NA   101002H911 
+HLTH  100   002  MW         1830 2100 H 0020 H101A    20150706 20150811 1    VSM       rkaur@RTC.edu                                                TOOLS FOR SUCCESS        B561  HLTH 100002H919 
+NA    103   002  MW         1830 2100 H 0020 H101A    20150706 20150811 2    VSM       rkaur@RTC.edu                                                BASIC TECHNICAL SKILLS   B561  NA   103002H913 
+NA    105   002  MW         1830 2100 H 0020 H101A    20150706 20150811 1    VSM       rkaur@RTC.edu                                                PRINCIPLES OF A&P,RESTOR B561  NA   105002H915 
+BAST  033   001  TWRF                 H 0025 H101A    20150706 20150811 1    ASM       llehnhoff@RTC.edu                                            STUDENT SUCC FOR CNA     B561  BAST 033001D903 
+NURS  105   002  MTWRF      0800 1430 H 0032 H101B    20150706 20150811 1    HSM       yali@RTC.edu                                                 REPRODUCTIVE HEALTH      B561  NURS 105002H701 
+NURS  112   002  MTWRF      0800 1430 H 0032 H101B    20150706 20150811 1    VSM       yali@RTC.edu                                                 MENTAL HEALTH IN MULTI C B561  NURS 112002H707 
+NURS  119   002  MTWRF      0800 1430 H 0032 H101B    20150706 20150811 1    VSM       yali@RTC.edu                                                 REPRODUCTIVE HEALTH LAB  B561  NURS 119002H719 
+BIOL  105   001  MWR        0800 1100 H 0025 H108     20150706 20150824 1    ASM                                                                    INTRO TO A & P           B561  BIOL 105001G502 
+CHEM& 121   001  TWR        1200 1500 H 0025 H108     20150707 20150825 1    ASM                                                                    GENERAL CHEMISTRY        B561  CHEM&121001G522 
+BIOL& 242   001  MTR        1000 1300 H 0025 H109     20150707 20150825 1    ASM                                                                    HUMAN ANATOMY & PHYS II  B561  BIOL&242001G526 
+BIOL& 241   001  MTW        0800 1100 H 0025 H109     20150706 20150824 1    ASM       cstover@rtc.edu                                              HUMAN ANATOMY & PHYS. I  B561  BIOL&241001G516 
+BIOL& 241   001  TWR        1200 1500 H 0025 H109     20150707 20150825 1    ASM                                                                    HUMAN ANATOMY & PHYS. I  B561  BIOL&241001G514 
+CMST& 220   HYB  MW         1515 1715 H 0025 H201     20150706 20150814 1    ASM                                                                    PUBLIC SPEAKING          B561  CMST&220HYBN770 
+CMST& 101   001  MWF        0800 1100 H 0025 H201     20150706 20150814 1    ASM                                                                    INTRO TO COMMUNICATION   B561  CMST&101001G110 
+CMST& 101   001  MWF        1145 1445 H 0025 H201     20150706 20150814 1    ASM                                                                    INTRO TO COMMUNICATION   B561  CMST&101001G104 
+APP   085   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    HSM       djordan@rtc.edu                                              APPLICATIONS ORIENTATION B561  APP  085001B600 
+AMATH 165V  001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              BUSINESS MATH            B561  AMATH165V001B651
+APP   101   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTRO TO WINDOWS I       B561  APP  101001B601 
+APP   102   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTRO TO WINDOWS II      B561  APP  102001B603 
+APP   105   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTRO TO KEYBOARDING     B561  APP  105001B605 
+APP   106   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              KEYBOARDING SKILLBUILD I B561  APP  106001B606 
+APP   107   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              KEYBOARDING SKILLBUIL II B561  APP  107001B607 
+APP   110   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              OUTLOOK I                B561  APP  110001B608 
+APP   111   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              OUTLOOK II               B561  APP  111001B661 
+APP   115   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              WORD I                   B561  APP  115001B612 
+APP   116   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              WORD II                  B561  APP  116001B613 
+APP   117   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              WORD III                 B561  APP  117001B614 
+APP   120   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              EXCEL I                  B561  APP  120001B615 
+APP   121   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              EXCEL II                 B561  APP  121001B616 
+APP   122   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              EXCEL III                B561  APP  122001B617 
+APP   125   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS I                 B561  APP  125001B618 
+APP   126   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS II                B561  APP  126001B620 
+APP   126   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS II                B561  APP  126001B656 
+APP   127   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS III               B561  APP  127001B622 
+APP   130   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              HTML DESIGN I            B561  APP  130001B623 
+APP   131   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              HTML DESIGN II           B561  APP  131001B624 
+APP   135   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              DATA ENTRY I             B561  APP  135001B625 
+APP   136   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              DATA ENTRY II            B561  APP  136001B626 
+APP   140   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              USING THE INTERNET I     B561  APP  140001B627 
+APP   141   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              USING THE INTERNET II    B561  APP  141001B629 
+APP   145   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              POWERPOINT I             B561  APP  145001B631 
+APP   146   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              POWERPOINT II            B561  APP  146001B633 
+APP   150   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PUBLISHER I              B561  APP  150001B635 
+APP   151   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PUBLISHER II             B561  APP  151001B637 
+APP   170   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PHOTOSHOP I              B561  APP  170001B639 
+APP   171   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PHOTOSHOP II             B561  APP  171001B641 
+APP   175   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              DREAMWEAVER I            B561  APP  175001B643 
+APP   176   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              DREAMWEAVER II           B561  APP  176001B644 
+APP   180   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              BEGIN SKILL DEVELOPMENT  B561  APP  180001B645 
+APP   182   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTERM SKILL DEVELOPMENT B561  APP  182001B646 
+APP   184   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ADV SKILL DEVELOPMENT    B561  APP  184001B647 
+APP   186   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              SKILL DEVELOPMENT        B561  APP  186001B648 
+APP   191   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              JOB SEARCH SKILLS        B561  APP  191001B649 
+APP   192   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              COOP WORK EXPERIENCE     B561  APP  192001B650 
+APPL  101   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTRO TO WINDOWS I SKILL B561  APPL 101001B602 
+APPL  102   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTRO TO WINDOWS II SKLS B561  APPL 102001B604 
+APPL  110   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              OUTLOOK I SKILLS         B561  APPL 110001B609 
+APPL  111   001  MTWRF      0800 1430 H 0028 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              OUTLOOK II SKILLS        B561  APPL 111001B611 
+APPL  125   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS I SKILLS          B561  APPL 125001B619 
+APPL  126   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              ACCESS II SKILLS         B561  APPL 126001B621 
+APPL  140   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTERNET I SKILLS        B561  APPL 140001B628 
+APPL  141   001  MTWRF      0800 1430 H 0020 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              INTERNET II SKILLS       B561  APPL 141001B630 
+APPL  145   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              POWERPOINT I SKILLS      B561  APPL 145001B632 
+APPL  146   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              POWERPOINT II SKILLS     B561  APPL 146001B634 
+APPL  150   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PUBLISHER I SKILLS       B561  APPL 150001B636 
+APPL  151   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PUBLISHER II SKILLS      B561  APPL 151001B638 
+APPL  170   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PHOTOSHOP I SKILLS       B561  APPL 170001B640 
+APPL  171   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              PHOTOSHOP II SKILLS      B561  APPL 171001B642 
+ENGL  075   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              BUSINESS ENGLISH         B561  ENGL 075001B652 
+HUM   101   001  MTWRF      0800 1430 H 0025 H202     20150706 20150811 1    VSM       djordan@rtc.edu                                              HUMAN RELATIONS          B561  HUM  101001B653 
+LGL   109   HYB  R          1800 2100 H 0020 H203     20150706 20150811 1    ASM       chawkins@RTC.edu                                             LAW OFFICE PROCEDURES II B561  LGL  109HYBW195 
+ENGL  075   HYB  T          1800 2100 H 0020 H203     20150706 20150811 2    ASM       chawkins@RTC.edu                                             BUSINESS ENGLISH         B561  ENGL 075HYBW193 
+LGL   108   HYB  TRS        1800 2100 H 0015 H203     20150706 20150811 1    HSM       chawkins@RTC.edu                                             LAW OFFICE PROCEDURES I  B561  LGL  108HYBW104 
+LGL   136   HYB  TRS        1800 2100 H 0015 H203     20150706 20150811 1    VSM       chawkins@RTC.edu                                             LEGAL INTERNET APPLICATI B561  LGL  136HYBW114 
+MAP   103   001  MTWRF      0800 1430 H 0075 H207     20150706 20150811 1    HSM       dmaher@rtc.edu                                               PHARMACOLOGY             B561  MAP  103001B409 
+MAP   190   001  MTWRF      0800 1430 H 0075 H207     20150706 20150811 1    VSM       dmaher@rtc.edu                                               CAREER OPPORTUNITIES     B561  MAP  190001B443 
+MAP   268   001  MTWRF      0800 1430 H 0075 H207     20150706 20150811 1    VSM       dmaher@rtc.edu                                               HEALTH MGMT INFOR SYSTEM B561  MAP  268001B415 
+MAP   275   001  MTWRF      0800 1430 H 0075 H207     20150706 20150811 1    VSM       dmaher@rtc.edu                                               CURRENT HIM ISSUES&PRACT B561  MAP  275001B413 
+AOM   101   001  MTWRF      0800 1430 H 0025 H210     20150706 20150811 1    HSM       jdrinkwine@RTC.edu                                           PRINCIPLES OF OPER MGMT  B561  AOM  101001B201 
+AOM   120   001  MTWRF      0800 1430 H 0025 H210     20150706 20150811 1    VSM       jdrinkwine@RTC.edu                                           PLANNING F/SMALL BUSINES B561  AOM  120001B217 
+AOM   142   001  MTWRF      0800 1430 H 0025 H210     20150706 20150811 1    VSM       jdrinkwine@RTC.edu                                           OFFICE PROCEDURES        B561  AOM  142001B223 
+AOM   294   001  MTWRF      0800 1430 H 0025 H210     20150706 20150811 1    VSM       jdrinkwine@RTC.edu                                           COOPERATIVE WORK EXPERIE B561  AOM  294001B231 
+HUM   101   001  MTWRF      0800 1430 H 0025 H210     20150706 20150811 1    VSM       jdrinkwine@RTC.edu                                           HUMAN RELATIONS          B561  HUM  101001B239 
+PHIL& 101   HYB  T          1445 1715 H 0025 H212     20150716 20150811 1    ASM       aben-avi@RTC.edu                                             INTRO TO PHILOSOPHY      B561  PHIL&101HYBN472 
+PSYC& 100   001  TWR        0800 1100 H 0030 H212     20150707 20150813 1    ASM                                                                    GENERAL PSYCHOLOGY       B561  PSYC&100001G120 
+CMST& 101   001  TWR        1130 1435 H 0025 H212     20150707 20150813 1    ASM                                                                    INTRO TO COMMUNICATION   B561  CMST&101001G106 
+MATH  065   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065001G216 
+MATH  065A  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065A001G401
+MATH  065B  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065B001G402
+MATH  075   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075001G218 
+MATH  075A  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075A001G403
+MATH  075B  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075B001G404
+MATH  085   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085001G222 
+MATH  085A  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085A001G405
+MATH  085B  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085B001G406
+MATH  095   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 5    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095001G226 
+MATH  095A  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095A001G407
+MATH  095B  001  MTWR       0800 0945 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095B001G408
+MATH& 141   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             PRECALCULUS I            B561  MATH&141001G230 
+MATH& 142   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             PRECALCULUS II           B561  MATH&142001G290 
+MATH& 148   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             BUSINESS CALCULUS        B561  MATH&148001G220 
+MATH& 151   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             CALCULUS I               B561  MATH&151001G221 
+MATH& 152   001  MTWR       0800 0945 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             CALCULUS II              B561  MATH&152001G228 
+AMATH 175   001  MTWR       0800 1000 H 0028 H301     20150706 20150827 1    HSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS/IND B561  AMATH175001G214 
+AMATH 175A  001  MTWR       0800 1000 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS&IND B561  AMATH175A001G409
+AMATH 175B  001  MTWR       0800 1000 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS&IND B561  AMATH175B001G410
+AMATH 185   001  MTWR       0800 1000 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA FOR BUS  B561  AMATH185001G213 
+AMATH 185A  001  MTWR       0800 1000 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA  BUS&IND B561  AMATH185A001G411
+AMATH 185B  001  MTWR       0800 1000 H 0030 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA  BUS&IND B561  AMATH185B001G412
+AMATH 195   001  MTWR       0800 1000 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             ADVANCED APPLIED ALGEBRA B561  AMATH195001G286 
+AMATH 195A  001  MTWR       0800 1000 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             ADVANCED APPLIED ALGEBRA B561  AMATH195A001G413
+AMATH 195B  001  MTWR       0800 1000 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             ADV APPLIED SLGEBRA BUS  B561  AMATH195B001G414
+MATH  065   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065001G323 
+MATH  065A  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065A001G353
+MATH  065B  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             FUNDAMENTALS OF MATH     B561  MATH 065B001G354
+MATH  075   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075001G325 
+MATH  075A  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075A001G355
+MATH  075B  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             PREALGEBRA               B561  MATH 075B001G356
+MATH  085   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085001G327 
+MATH  085A  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085A001G357
+MATH  085B  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             BEGINNING ALGEBRA        B561  MATH 085B001G358
+MATH  095   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095001G329 
+MATH  095B  001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095B001G360
+MATH& 141   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             PRECALCULUS I            B561  MATH&141001G333 
+MATH& 142   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             PRECALCULUS II           B561  MATH&142001G335 
+MATH& 148   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             BUSINESS CALCULUS        B561  MATH&148001G337 
+MATH& 151   001  MTWR       1130 1315 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             CALCULUS I               B561  MATH&151001G339 
+AMATH 175   001  MTWR       1130 1330 H 0028 H301     20150706 20150827 4    HSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS/IND B561  AMATH175001G341 
+AMATH 175A  001  MTWR       1130 1330 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS&IND B561  AMATH175A001G347
+AMATH 175B  001  MTWR       1130 1330 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             APPLIED MATH FOR BUS&IND B561  AMATH175B001G348
+AMATH 185   001  MTWR       1130 1330 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA FOR BUS  B561  AMATH185001G343 
+AMATH 185A  001  MTWR       1130 1330 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA  BUS&IND B561  AMATH185A001G349
+AMATH 185B  001  MTWR       1130 1330 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             APPLIED ALGEBRA  BUS&IND B561  AMATH185B001G350
+AMATH 195   001  MTWR       1130 1330 H 0028 H301     20150706 20150827 4    VSM       mcooksey@RTC.edu                                             ADVANCED APPLIED ALGEBRA B561  AMATH195001G321 
+AMATH 195A  001  MTWR       1130 1330 H 0028 H301     20150706 20150827 2    VSM       mcooksey@RTC.edu                                             ADVANCED APPLIED ALGEBRA B561  AMATH195A001G351
+MATH  095A  001  MTWR       1133 1315 H 0028 H301     20150706 20150827 3    VSM       mcooksey@RTC.edu                                             INTERMEDIATE ALGEBRA     B561  MATH 095A001G359
+MATH& 152   001  MTWR       1133 1315 H 0028 H301     20150706 20150827 1    VSM       mcooksey@RTC.edu                                             CALCULUS II              B561  MATH&152001G224 
+MATH  065   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          FUNDAMENTALS OF MATH     B561  MATH 065001G318 
+MATH  065A  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 2    VSM       dtamilarasi@RTC.edu                                          FUNDAMENTALS OF MATH     B561  MATH 065A001G471
+MATH  065B  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          FUNDAMENTALS OF MATH     B561  MATH 065B001G472
+MATH  075   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          PREALGEBRA               B561  MATH 075001G320 
+MATH  075A  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          PREALGEBRA               B561  MATH 075A001G473
+MATH  075B  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          PREALGEBRA               B561  MATH 075B001G474
+MATH  085   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          BEGINNING ALGEBRA        B561  MATH 085001G322 
+MATH  085A  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          BEGINNING ALGEBRA        B561  MATH 085A001G475
+MATH  085B  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          BEGINNING ALGEBRA        B561  MATH 085B001G476
+MATH  095   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          INTERMEDIATE ALGEBRA     B561  MATH 095001G324 
+MATH  095A  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 2    VSM       dtamilarasi@RTC.edu                                          INTERMEDIATE ALGEBRA     B561  MATH 095A001G477
+MATH  095B  001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          INTERMEDIATE ALGEBRA     B561  MATH 095B001G478
+MATH& 141   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          PRECALCULUS I            B561  MATH&141001G328 
+MATH& 142   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          PRECALCULUS II           B561  MATH&142001G330 
+MATH& 148   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 2    VSM       dtamilarasi@RTC.edu                                          BUSINESS CALCULUS        B561  MATH&148001G340 
+MATH& 151   001  MTWR       1445 1630 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          CALCULUS I               B561  MATH&151001G342 
+AMATH 175   001  MTWR       1445 1645 H 0028 H301     20150706 20150827 2    HSM       dtamilarasi@RTC.edu                                          APPLIED MATH FOR BUS/IND B561  AMATH175001G332 
+AMATH 175A  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          APPLIED MATH FOR BUS&IND B561  AMATH175A001G479
+AMATH 175B  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          APPLIED MATH FOR BUS&IND B561  AMATH175B001G480
+AMATH 185   001  MTWR       1445 1645 H 0028 H301     20150706 20150827 2    VSM       dtamilarasi@RTC.edu                                          APPLIED ALGEBRA FOR BUS  B561  AMATH185001G334 
+AMATH 185A  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          APPLIED ALGEBRA  BUS&IND B561  AMATH185A001G481
+AMATH 185B  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          APPLIED ALGEBRA  BUS&IND B561  AMATH185B001G482
+AMATH 195   001  MTWR       1445 1645 H 0028 H301     20150706 20150827 3    VSM       dtamilarasi@RTC.edu                                          ADVANCED APPLIED ALGEBRA B561  AMATH195001G319 
+AMATH 195A  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 4    VSM       dtamilarasi@RTC.edu                                          ADVANCED ALGEBRA         B561  AMATH195A001G483
+AMATH 195B  001  MTWR       1445 1645 H 0028 H301     20150706 20150827 1    VSM       dtamilarasi@RTC.edu                                          ADV APPLIED ALGEBRA BUS  B561  AMATH195B001G484
+AMATH 195A  HYB  TR         1800 1940 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                ADVANCED APPLIED ALGEBRA B561  AMATH195AHYBW495
+MATH  075   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    HSM       smcarthur@RTC.edu                                            PREALGEBRA               B561  MATH 075HYBN453 
+AMATH 175   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 3    VSM       smcarthur@RTC.edu                                            APPLIED MATH FOR BUS&IND B561  AMATH175HYBN481 
+AMATH 175A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                APPLIED MATH FOR BUS&IND B561  AMATH175AHYBW483
+AMATH 175B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                APPLIED MATH FOR BUS&IND B561  AMATH175BHYBW485
+AMATH 185   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       smcarthur@RTC.edu                                            APPLIED ALGEBRA FOR BUS  B561  AMATH185HYBN487 
+AMATH 185A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                APPLIED ALGEBRA  BUS&IND B561  AMATH185AHYBW489
+AMATH 185B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                APPLIED ALGEBRA  BUS&IND B561  AMATH185BHYBW491
+AMATH 195   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                ADVANCED APPLIED ALGEBRA B561  AMATH195HYBW493 
+AMATH 195B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 3    VSM       aroth@RTC.edu                                                ADV APPLIED ALGEBRA BUS  B561  AMATH195BHYBW497
+MATH  065   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       smcarthur@RTC.edu                                            FUNDAMENTALS OF MATH     B561  MATH 065HYBW447 
+MATH  065A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                FUNDAMENTALS OF MATH     B561  MATH 065AHYBW449
+MATH  065B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                FUNDAMENTALS OF MATH     B561  MATH 065BHYBW451
+MATH  075A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                PREALGEBRA               B561  MATH 075AHYBW455
+MATH  075B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                PRE ALGEBRA              B561  MATH 075BHYBW457
+MATH  085   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       smcarthur@RTC.edu                                            BEGINNING ALGEBRA        B561  MATH 085HYBN459 
+MATH  085A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                BEGINNING ALGEBRA        B561  MATH 085AHYBW461
+MATH  085B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                BEGINNING ALGEBRA        B561  MATH 085BHYBW463
+MATH  095   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       smcarthur@RTC.edu                                            INTERMEDIATE ALGEGRA     B561  MATH 095HYBN465 
+MATH  095A  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       aroth@RTC.edu                                                INTERMEDIATE ALGEBRA     B561  MATH 095AHYBW467
+MATH  095B  HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       aroth@RTC.edu                                                INTERMEDIATE ALGEBRA     B561  MATH 095BHYBW469
+MATH& 141   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       smcarthur@RTC.edu                                            PRECALCULUS I            B561  MATH&141HYBN473 
+MATH& 142   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       smcarthur@RTC.edu                                            PRECALCULUS II           B561  MATH&142HYBN475 
+MATH& 148   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 1    VSM       smcarthur@RTC.edu                                            BUSINESS CALCULUS        B561  MATH&148HYBN477 
+MATH& 151   HYB  TR         1800 1945 H 0028 H301     20150706 20150827 4    VSM       smcarthur@RTC.edu                                            CALCULUS I               B561  MATH&151HYBN479 
+MATH& 146   001  MTWR       1130 1315 H 0025 H303     20150706 20150827 1    ASM       aroth@RTC.edu                                                INTRO TO STATISTICS      B561  MATH&146001G248 
+BAST  019   HYB  MTR        1800 2100 H 0025 H304     20150706 20150811 1    ASM       nali@RTC.edu                                                 HYBRID ESL               B561  BAST 019HYBE797 
+BAST  085   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 1    HSM       Linda.Hart@RTC.edu                                           ADULT BASIC ED III       B561  BAST 085001D303 
+BAST  080   001  MTWRF      0900 1100 H 0020 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION I  B561  BAST 080001D103 
+BAST  082   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION II B561  BAST 082001D203 
+BAST  083   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 3    VSM       Linda.Hart@RTC.edu                                           BASIC GED PREPARATION    B561  BAST 083001D503 
+BAST  084   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION IV B561  BAST 084001D403 
+BAST  086   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADVANCED GED PREPARATION B561  BAST 086001D603 
+BAST  090   001  MTWRF      0900 1100 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           BRUSH UP FOR TECH PROG   B561  BAST 090001D876 
+BAST  085   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 1    HSM       Linda.Hart@RTC.edu                                           ADULT BASIC ED III       B561  BAST 085001D315 
+BAST  080   001  MTWRF      1130 1430 H 0020 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION I  B561  BAST 080001D115 
+BAST  082   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION II B561  BAST 082001D215 
+BAST  083   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 4    VSM       Linda.Hart@RTC.edu                                           BASIC GED PREPARATION    B561  BAST 083001D515 
+BAST  084   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADULT BASIC EDUCATION IV B561  BAST 084001D415 
+BAST  086   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           ADVANCED GED PREPARATION B561  BAST 086001D615 
+BAST  090   001  MTWRF      1130 1430 H 0025 H304     20150706 20150811 1    VSM       Linda.Hart@RTC.edu                                           BRUSH UP FOR TECH PROG   B561  BAST 090001D883 
+AMATH 182   001  MTWRF      0900 1200 H 0030 H305     20150706 20150811 1    HSM       mchamberlin@RTC.edu                                          BEG ALGEBRA FOR ACCOUNT  B561  AMATH182001B315 
+MATH  095   001  MTWRF      0900 1200 H 0030 H305     20150706 20150811 2    VSM       mchamberlin@RTC.edu                                          INTERMEDIATE ALGEBRA     B561  MATH 095001B377 
+BIOL& 160   001  MTW        1230 1530 H 0025 H306     20150706 20150811 1    ASM                                                                    GENERAL BIOLOGY          B561  BIOL&160001G524 
+BIOL& 160   001  MWF        0800 1100 H 0025 H306     20150706 20150824 1    ASM                                                                    GENERAL BIOLOGY          B561  BIOL&160001G542 
+AMATH 180V  001  MTWRF      0900 1200 H 0030 H307     20150706 20150811 1    ASM       mchamberlin@RTC.edu                                          ALGEBRA FOR THE PARAPROF B561  AMATH180V001B365
+ACCT  224   001  MTWRF      1335 1430 H 0030 H307     20150706 20150811 1    ASM       jnewcome@rtc.edu                                             FINANCIAL APPLICATIONS   B561  ACCT 224001B335 
+APP   105   001  MTWRF      0800 1430 H 0020 H307B    20150706 20150811 1    ASM       mchamberlin@RTC.edu                                          INTRO TO KEYBOARDING     B561  APP  105001B369 
+ACCT  232   001  MTWRF      1100 1200 H 0030 H307B    20150706 20150811 1    ASM       mchamberlin@RTC.edu                                          INTERMEDIATE EXCEL       B561  ACCT 232001B339 
+ACCT  124   001  MTWRF      1100 1200 H 0030 H309     20150706 20150811 1    ASM       cholman@rtc.edu                                              SMALL BUSINESS ACCOUNT   B561  ACCT 124001B307 
+BAST  024   001  MTWRF      0730 1400 H 0017 H310     20150706 20150811 1    ASM       cpomeroy@RTC.edu                                             CAREER EXPLORATION CLASS B561  BAST 024001D784 
+BLRS  210   001  TR         1600 2000 H 0015 HSLINC   20150804 20150806 1    ASM                                                                    BOILER OPERATOR REFRESHE B561  BLRS 210001Q216 
+CULS  130   001  F          1800 2100 H 0010 I101     20150710 20150731 1    ASM                                                                    QUICK/LIGHT INTERN CUISI B561  CULS 130001M430 
+CULS  110   001  MTWR       0800 1200 H 0010 I101     20150803 20150806 1    ASM                                                                    ACF CERTIFIED CULINARIAN B561  CULS 110001M410 
+CULS  172   001  S          0800 1200 H 0010 I101     20150801 20150812 1    ASM                                                                    KNIFE SKILLS             B561  CULS 172001M472 
+CUL   107   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    HSM       jfisher@rtc.edu                                              SAUCIER I                B561  CUL  107001M211 
+AMATH 160R  001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       mmcbride@RTC.edu                                             CULINARY MATH-COST CONTR B561  AMATH160R001M265
+CUL   108   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              SAUCIER II               B561  CUL  108001M213 
+CUL   109   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              ENTREMETIER I            B561  CUL  109001M215 
+CUL   110   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              MOIST HEAT COOK METHODS  B561  CUL  110001M217 
+CUL   111   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              DRY HEAT COOKING METHODS B561  CUL  111001M219 
+CUL   112   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              AMERICAN REGIONAL COOK   B561  CUL  112001M221 
+CUL   113   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              INTERNATIONAL COOKING    B561  CUL  113001M223 
+CUL   114   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              DELICATESSEN I           B561  CUL  114001M225 
+CUL   115   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              DELICATESSEN II          B561  CUL  115001M227 
+CUL   116   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              GARDE MANGER I           B561  CUL  116001M229 
+CUL   117   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              GARDE MANGER II          B561  CUL  117001M231 
+CUL   118   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              BREAKFAST COOKERY        B561  CUL  118001M233 
+CUL   120   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              PURCHASING AND RECEIVING B561  CUL  120001M237 
+CUL   121   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              DINING ROOM SERVICE      B561  CUL  121001M239 
+CUL   123   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              ENTREMETIER II           B561  CUL  123001M243 
+CUL   124   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              FRY STATION              B561  CUL  124001M245 
+CUL   125   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              SAUTE STATION            B561  CUL  125001M247 
+CUL   126   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              BROILER STATION          B561  CUL  126001M249 
+CUL   127   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              LEAD LINE                B561  CUL  127001M251 
+CUL   128   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              PANTRY                   B561  CUL  128001M253 
+CUL   129   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              ADV TECHNIQUES-PRACTICAL B561  CUL  129001M255 
+CUL   130   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              SOUS CHEF                B561  CUL  130001M257 
+CUL   131   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              CAPSTONE                 B561  CUL  131001M259 
+CUL   190   001  MTWRF      0700 1330 H 0045 I107     20150706 20150811 1    VSM       jfisher@rtc.edu                                              CO-OP INTERN/ WORK EXPER B561  CUL  190001M263 
+CULS  107   001  RS         1800 2100 H 0012 I107     20150709 20150718 1    ASM                                                                    SUMMER GRILLING TECHNIQ  B561  CULS 107001M407 
+BAK   101   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    HSM       rholland@RTC.edu                                             OVENS I                  B561  BAK  101001M101 
+AMATH 161R  001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             BAKERY MATH              B561  AMATH161R001M141
+BAK   102   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             OVENS II                 B561  BAK  102001M103 
+BAK   103   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             DOUGHNUTS                B561  BAK  103001M105 
+BAK   104   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             SCALING                  B561  BAK  104001M107 
+BAK   105   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             MIXING I                 B561  BAK  105001M109 
+BAK   106   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             MIXING II                B561  BAK  106001M111 
+BAK   107   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             COOKIES                  B561  BAK  107001M113 
+BAK   108   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             PIES & TARTS             B561  BAK  108001M115 
+BAK   109   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             PASTRIES                 B561  BAK  109001M117 
+BAK   110   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             YEAST DOUGHS I           B561  BAK  110001M119 
+BAK   111   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             YEAST DOUGHS II          B561  BAK  111001M121 
+BAK   112   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             PUFF PASTRIES            B561  BAK  112001M123 
+BAK   113   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             CAKES I                  B561  BAK  113001M125 
+BAK   114   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             CAKES II                 B561  BAK  114001M127 
+BAK   115   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             ARTISAN BREAD I          B561  BAK  115001M129 
+BAK   116   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             ARTISAN BREAD II         B561  BAK  116001M131 
+BAK   117   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             BAKERY OPERATIONS I      B561  BAK  117001M133 
+BAK   118   001  MTWRF      0600 1230 H 0012 I109     20150706 20150811 1    VSM       rholland@RTC.edu                                             BAKERY OPERATIONS II     B561  BAK  118001M135 
+CUL   119   001  MTWRF      0700 1330 H 0045 I109     20150706 20150811 1    ASM       rholland@RTC.edu                                             BAKERY BASICS            B561  CUL  119001M235 
+BAKS  140   001  TR         1800 2100 H 0010 I109     20150707 20150811 1    ASM                                                                    ARTISAN BREAD            B561  BAKS 140001M340 
+CNT   257   003  MTWRF      0800 1430 H 0022 J102     20150706 20150811 1    HSM       dmccormick@RTC.edu                                           WIRELESS NETWORKING FUND B561  CNT  257003L113 
+CNT   271   003  MTWRF      0800 1430 H 0022 J102     20150706 20150811 1    VSM       dmccormick@RTC.edu                                           COMM & HUMAN RELAT IN WK B561  CNT  271003L121 
+CNT   251   001  MTWRF      0800 1430 H 0022 J104     20150706 20150811 1    HSM       wsanderson@rtc.edu                                           WINDOWS SERVER 2008 NET. B561  CNT  251001L107 
+CNT   271   001  MTWRF      0800 1430 H 0022 J104     20150706 20150811 2    VSM       wsanderson@rtc.edu                                           COMM & HUMAN RELAT IN WK B561  CNT  271001L125 
+CNT   263   002  MTWRF      0800 1430 H 0022 J105     20150706 20150811 1    HSM       dpartain@RTC.edu                                             LINUX SYSTEM ADMINISTRAT B561  CNT  263002L117 
+CNT   271   001  MTWRF      0800 1430 H 0022 J105     20150706 20150811 3    VSM       dpartain@RTC.edu                                             COMM & HUMAN RELAT IN WK B561  CNT  271001L123 
+CSI   171   001  MTWRF      0800 1430 H 0060 J107     20150706 20150811 1    ASM                                                                    SOFTWARE TESTING         B561  CSI  171001L519 
+CSIS  120   001  MWS        1730 2130 H 0018 J107     20150706 20150808 1    ASM       kfobes@RTC.edu                                               FUNDAMENTALS OF PROGRAMM B561  CSIS 120001L204 
+AMATH 174J  001  MTWRF      0800 1430 H 0060 J108     20150706 20150811 1    HSM       lzerrouki@rtc.edu                                            COMPUTER MATHEMATICS     B561  AMATH174J001L523
+CSI   293   001  MTWRF      0800 1430 H 0030 J108     20150706 20150811 1    VSM       lzerrouki@rtc.edu                                            CAPSTONE DESIGN & DEVELP B561  CSI  293001L619 
+CSIS  152   001  TRS        1730 2130 H 0018 J108     20150707 20150808 1    ASM                                                                    IT PROJECT MANAGEMENT    B561  CSIS 152001L242 
+CSI   182   001  MTWRF      0800 1430 H 0060 J109     20150706 20150811 1    ASM       kpost@rtc.edu                                                LEADERSHIP & TEAMWORK IN B561  CSI  182001L521 
+BAST  059   001  MTWR       1800 2100 H 0020 J115     20150706 20150811 1    ASM                                                                    ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E127 
+BAST  059   001  MTWRF      0800 1100 H 0025 J115     20150706 20150811 1    ASM       szugschwerdt@RTC.edu                                         ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E122 
+BAST  059   001  MTWRF      1130 1430 H 0020 J115     20150706 20150811 1    ASM       tvalova@RTC.edu                                              ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E120 
+BLRS  110   001  S          0800 1630 H 0025 J115     20150711 20150919 1    ASM       jjackson@RTC.edu                                             BOILER OPER. LICENS. 3&4 B561  BLRS 110001Q209 
+BAST  059   001  MTWR       1800 2100 H 0020 J117     20150706 20150811 1    ASM       ggergen@RTC.edu                                              ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E117 
+BAST  061   001  MTWR       1800 2100 H 0025 J118     20150706 20150811 16   ASM       bgutierrez@RTC.edu                                           ESL LEVEL II             B561  BAST 061001E218 
+BAST  061   001  MTWRF      0800 1100 H 0025 J118     20150706 20150811 17   ASM       hshampain@rtc.edu                                            ESL LEVEL II             B561  BAST 061001E228 
+PMM   101   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    HSM       hblinder@RTC.edu                                             CANVAS COMMUNICATION     B561  PMM  101001K375 
+PMM   102   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM       hblinder@RTC.edu                                             BASIC MATH               B561  PMM  102001K377 
+PMM   103   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM       hblinder@RTC.edu                                             SHOP SAFETY              B561  PMM  103001K379 
+PMM   104   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM                                                                    MACHINE SYSTEMS          B561  PMM  104001K381 
+PMM   105   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM       hblinder@RTC.edu                                             COMM & BLUE PRINT READ   B561  PMM  105001K383 
+PMM   106   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM       hblinder@RTC.edu                                             PREVENTATIVE MAINT/ENVIR B561  PMM  106001K385 
+PMM   107   001  MTWRF      0700 1400 H 0012 J207     20150707 20150925 1    VSM       hblinder@RTC.edu                                             PROGRAM REVIEW &CAPS EXM B561  PMM  107001K387 
+STRN  100   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    HSM       jbentley@RTC.edu                                             INTRO TO STRING REPAIR   B561  STRN 100001B849 
+STRN  110   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             GUITAR SET-UP            B561  STRN 110001B851 
+STRN  120   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             ELECTRIC GUITAR          B561  STRN 120001B853 
+STRN  130   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             BASIC GUITAR STRUCTURAL  B561  STRN 130001B855 
+STRN  140   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             FRET SERVICES            B561  STRN 140001B857 
+STRN  190   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             CAPSTONE PROJECT         B561  STRN 190001B859 
+STRN  210   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             ADV STRUCTURAL REPAIR    B561  STRN 210001B861 
+STRN  220   001  MTWRF      0700 1330 H 0015 J222     20150608 20150828 1    VSM       jbentley@RTC.edu                                             FINISHING TECHNIQUES     B561  STRN 220001B863 
+BAST  080   001  MTWR       1800 2100 H 0020 J302     20150706 20150811 1    HSM                                                                    ADULT BASIC EDUCATION I  B561  BAST 080001D116 
+BAST  082   001  MTWR       1800 2100 H 0025 J302     20150706 20150811 1    VSM       jfalconer@RTC.edu                                            ADULT BASIC EDUCATION II B561  BAST 082001D216 
+BAST  083   000  MTWR       1800 2100 H 0025 J302     20150706 20150811 2    VSM                                                                    BASIC GED PREPARATION    B561  BAST 083000D516 
+BAST  084   001  MTWR       1800 2100 H 0025 J302     20150706 20150811 1    VSM       jfalconer@RTC.edu                                            ADULT BASIC EDUCATION IV B561  BAST 084001D316 
+BAST  084   001  MTWR       1800 2100 H 0025 J302     20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION IV B561  BAST 084001D416 
+BAST  086   001  MTWR       1800 2100 H 0025 J302     20150706 20150811 1    VSM       jfalconer@RTC.edu                                            ADVANCED GED PREPARATION B561  BAST 086001D616 
+BAST  090   001  MTWR       1800 2100 H 0025 J302     20150706 20150811 1    VSM       jfalconer@RTC.edu                                            BRUSH UP FOR TECH PROG   B561  BAST 090001D884 
+BAST  098   HYB  TWR        0800 1100 H 0025 J302     20150706 20150811 1    ASM       mlesmeister@rtc.edu                                          ABE READ & WRITE  HYBRID B561  BAST 098HYBD892 
+BAST  038   HYB  TWR        1130 1430 H 0025 J302     20150706 20150811 1    ASM       mlesmeister@rtc.edu                                          TRANSITION COLLEGE PREP  B561  BAST 038HYBD833 
+DFT   111   001  MTWRF      0800 1430 H 0022 J303     20150706 20150811 1    HSM       jboggs@RTC.edu                                               INTRO TO PARAMETRIC DSGN B561  DFT  111001L205 
+DFT   183   001  MTWRF      0800 1430 H 0022 J303     20150706 20150811 1    VSM       mbiell@rtc.edu                                               BUSINESS LEADERSHIP FOR  B561  DFT  183001L227 
+DFT   185   001  MTWRF      0800 1430 H 0022 J303     20150706 20150811 1    VSM       mbiell@rtc.edu                                               JOB READINESS            B561  DFT  185001L229 
+DFT   295   001  MTWRF      0800 1430 H 0022 J303     20150706 20150811 1    VSM       mbiell@rtc.edu                                               ENGINEER DESIGN TECH S P B561  DFT  295001L241 
+DFTS  114   002  MW         1730 2130 H 0020 J304     20150706 20150805 1    ASM       lmontgomery@rtc.edu                                          AUTOCAD-LEVEL I          B561  DFTS 114002L402 
+DFTS  138   001  S          0800 1630 H 0022 J304     20150725 20150801 1    ASM       lmontgomery@rtc.edu                                          AUTOCAD CREATING 3D MODE B561  DFTS 138001L446 
+DFTS  116   001  TR         1730 2130 H 0020 J304     20150707 20150806 1    ASM                                                                    AUTOCAD-LEVEL II         B561  DFTS 116001L408 
+DFTS  135   001  TR         1730 2130 H 0022 J304     20150714 20150723 1    ASM                                                                    SKETCHUP BASICS          B561  DFTS 135001L428 
+BAST  062   001  MTWRF      0800 1100 H 0025 J305     20150706 20150811 1    ASM       egraham@RTC.edu                                              ESL LEVEL III            B561  BAST 062001E316 
+BAST  080   001  MTWRF      0800 1100 H 0020 J310     20150706 20150811 1    HSM       dburrell@RTC.edu                                             ADULT BASIC EDUCATION I  B561  BAST 080001D100 
+BAST  082   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             ADULT BASIC EDUCATION II B561  BAST 082001D200 
+BAST  083   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             BASIC GED PREPARATION    B561  BAST 083001D500 
+BAST  084   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             ADULT BASIC EDUCATION IV B561  BAST 084001D400 
+BAST  085   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             ADULT BASIC ED III       B561  BAST 085001D300 
+BAST  086   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             ADVANCED GED PREPARATION B561  BAST 086001D600 
+BAST  090   001  MTWRF      0800 1100 H 0025 J310     20150706 20150811 1    VSM       dburrell@RTC.edu                                             BRUSH UP FOR TECH PROG   B561  BAST 090001D873 
+BAST  097   HYB  TWR        1140 1430 H 0025 J310     20150706 20150811 1    ASM       dburrell@RTC.edu                                             ABE MATH (HYBRID)        B561  BAST 097HYBD888 
+BIOL& 260   001  MWF        0800 1100 H 0025 J312     20150706 20150824 1    ASM       bacar@RTC.edu                                                MICROBIOLOGY             B561  BIOL&260001G848 
+DFT   117   003  MTWRF      0800 1430 H 0022 J315     20150706 20150811 1    HSM       jboggs@RTC.edu                                               ARCHIT COMP AIDED DRAFT  B561  DFT  117003L211 
+DFT   121   003  MTWRF      0800 1430 H 0022 J315     20150706 20150811 1    VSM       jboggs@RTC.edu                                               INTRO.ARCHITECTURAL DRAF B561  DFT  121003L213 
+DFTS  278   001  MTWRF      1500 2000 H 0010 J315     20150713 20150717 1    HSM                                                                    CATIA V5 BOOT CAMP       B561  DFTS 278001S452 
+DFTS  278   004  MTWRF      1500 2000 H 0010 J315     20150713 20150717 3    VSM                                                                    CATIA V5 BOOT CAMP       B561  DFTS 278004S458 
+DFTS  278   002  MTWRF      1500 2000 H 0010 J315     20150803 20150807 2    HSM                                                                    CATIA V5 BOOT CAMP       B561  DFTS 278002S454 
+DFTS  278   005  MTWRF      1500 2000 H 0010 J315     20150803 20150807 4    VSM                                                                    CATIA V5 BOOT CAMP       B561  DFTS 278005S460 
+DFTS  270   003  S          0800 1600 H 0015 J315     20150718 20150808 1    HSM                                                                    CATIA V5 F/MECHANICS&M.E B561  DFTS 270003S470 
+DFTS  136   001  S          0800 1630 H 0015 J315     20150718 20150808 1    HSM                                                                    REVIT ARCHITECT FUNDAMEN B561  DFTS 136001L442 
+DFTS  270   002  WR         1500 1830 H 0015 J315     20150715 20150806 2    ASM                                                                    CATIA V5 F/MECHANICS&M.E B561  DFTS 270002S468 
+AUTC  124   001  MTWRF      0700 1330 H 0022 K101     20150706 20150811 1    HSM       mfobes@rtc.edu                                               HEATING & AIR CONDITION  B561  AUTC 124001J107 
+AUTC  124   002  MTWRF      0700 1330 H 0022 K101     20150706 20150811 2    VSM       jdevine@rtc.edu                                              HEATING & AIR CONDITION  B561  AUTC 124002J119 
+AUTC  124   003  MTWRF      0700 1330 H 0022 K101     20150706 20150811 3    VSM       gneill@rtc.edu                                               HEATING & AIR CONDITION  B561  AUTC 124003J139 
+AUTC  171   003  MTWRF      0700 1330 H 0022 K101     20150706 20150811 1    VSM       gneill@rtc.edu                                               WRITTEN COMMUNICATION    B561  AUTC 171003J149 
+AUTC  171   002  MTWRF      0700 1330 H 0022 K101     20150706 20150811 2    VSM       jdevine@rtc.edu                                              WRITTEN COMMUNICATION    B561  AUTC 171002J135 
+AUTC  171   001  MTWRF      0700 1330 H 0022 K101     20150706 20150811 3    VSM       mfobes@rtc.edu                                               WRITTEN COMMUNICATION    B561  AUTC 171001J125 
+AUTC  180   001  MTWRF      0700 1330 H 0022 K101     20150706 20150811 1    VSM       mfobes@rtc.edu                                               HUMAN/CUSTOMER RELATIONS B561  AUTC 180001J129 
+AUTC  180   002  MTWRF      0700 1330 H 0022 K101     20150706 20150811 2    VSM       jdevine@rtc.edu                                              HUMAN/CUSTOMER RELATIONS B561  AUTC 180002J137 
+AUTC  180   003  MTWRF      0700 1330 H 0022 K101     20150706 20150811 3    VSM       gneill@rtc.edu                                               HUMAN/CUSTOMER RELATIONS B561  AUTC 180003J151 
+FAS   123   001  MTWRF      0700 1330 H 0022 K102     20150706 20150811 1    HSM       bthompson@RTC.edu                                            DIESEL FUNDAMENTALS      B561  FAS  123001J315 
+AMATH 177J  001  MTWRF      0700 1330 H 0022 K102     20150706 20150811 1    VSM       bthompson@RTC.edu                                            AUTOMOTIVE MATHEMATICS   B561  AMATH177J001J345
+FAS   124   001  MTWRF      0700 1330 H 0022 K102     20150706 20150811 1    VSM       bthompson@RTC.edu                                            CLIMATE CONTROL SYSTEMS  B561  FAS  124001J317 
+FAS   171   001  MTWRF      0700 1330 H 0022 K102     20150706 20150811 1    VSM       bthompson@RTC.edu                                            WRITTEN COMMUNICATIONS   B561  FAS  171001J319 
+ABDY  159   001  MTWRF      0700 1330 H 0024 K110     20150706 20150811 1    HSM       servin@rtc.edu                                               LIVE AUTOBODY REPAIR/REF B561  ABDY 159001J225 
+ABDY  296   001  MTWRF      0700 1330 H 0024 K110     20150706 20150811 1    VSM       servin@rtc.edu                                               CO-OP II                 B561  ABDY 296001J527 
+BAST  031   001  TWR        1330 1430 H 0025 K111     20150706 20150811 1    ASM       spardakhtim@RTC.edu                                          STUDENT SUCC F/AUTO IBES B561  BAST 031001D901 
+AUTC  294   001  MTWRF      0700 1330 H 0022 K113     20150706 20150811 1    ASM                                                                    SUMMER INTERNSHIP        B561  AUTC 294001J173 
+BAST  059   001  MTWRF      0800 1100 H 0020 K203     20150706 20150811 1    ASM       rmillare@RTC.edu                                             ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E114 
+BAST  059   001  MTWR       1030 1330 H 0020 KLC      20150706 20150827 1    HSM       shanke@rtc.edu                                               ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E110 
+BAST  058   001  MTWR       1030 1330 H 0025 KLC      20150706 20150827 3    VSM       shanke@rtc.edu                                               ESL LEVEL VI             B561  BAST 058001E610 
+BAST  061   001  MTWR       1030 1330 H 0025 KLC      20150706 20150827 8    VSM       shanke@rtc.edu                                               ESL LEVEL II             B561  BAST 061001E210 
+BAST  062   001  MTWR       1030 1330 H 0025 KLC      20150706 20150827 10   VSM       shanke@rtc.edu                                               ESL LEVEL III            B561  BAST 062001E310 
+BAST  063   001  MTWR       1030 1330 H 0025 KLC      20150706 20150827 8    VSM       shanke@rtc.edu                                               ESL LEVEL IV             B561  BAST 063001E410 
+BAST  064   001  MTWR       1030 1330 H 0025 KLC      20150706 20150827 1    VSM       shanke@rtc.edu                                               ESL LEVEL V              B561  BAST 064001E510 
+BAST  058   004  MTWR       1800 2100 H 0025 KLC      20150706 20150828 2    VSM       inikolayeva@rtc.edu                                          ESL LEVEL VI             B561  BAST 058004E606 
+BAST  061   015  MTWR       1800 2100 H 0025 KLC      20150706 20150828 7    VSM       inikolayeva@rtc.edu                                          ESL LEVEL II             B561  BAST 061015E206 
+BAST  062   014  MTWR       1800 2100 H 0025 KLC      20150706 20150828 9    VSM       inikolayeva@rtc.edu                                          ESL LEVEL III            B561  BAST 062014E306 
+BAST  063   024  MTWR       1800 2100 H 0025 KLC      20150706 20150828 7    VSM       inikolayeva@rtc.edu                                          ESL LEVEL IV             B561  BAST 063024E406 
+BAST  064   001  MTWR       1800 2100 H 0025 KLC      20150706 20150828 1    VSM       inikolayeva@rtc.edu                                          ESL LEVEL V              B561  BAST 064001E506 
+BAST  059   001  MTWR       1430 1730 H 0020 KNTLC    20150706 20150828 1    HSM       inikolayeva@rtc.edu                                          ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E105 
+BAST  058   001  MTWR       1430 1730 H 0025 KNTLC    20150706 20150828 4    VSM       inikolayeva@rtc.edu                                          ESL LEVEL VI             B561  BAST 058001E605 
+BAST  061   001  MTWR       1430 1730 H 0025 KNTLC    20150706 20150828 6    VSM       inikolayeva@rtc.edu                                          ESL LEVEL II             B561  BAST 061001E205 
+BAST  062   001  MTWR       1430 1730 H 0025 KNTLC    20150706 20150828 11   VSM       inikolayeva@rtc.edu                                          ESL LEVEL III            B561  BAST 062001E305 
+BAST  063   001  MTWR       1430 1730 H 0025 KNTLC    20150706 20150828 6    VSM       inikolayeva@rtc.edu                                          ESL LEVEL IV             B561  BAST 063001E405 
+BAST  064   001  MTWR       1430 1730 H 0025 KNTLC    20150706 20150828 1    VSM       inikolayeva@rtc.edu                                          ESL LEVEL V              B561  BAST 064001E505 
+BAST  059   001  MTWR       1800 2100 H 0020 KNTLC    20150706 20150828 1    HSM       inikolayeva@rtc.edu                                          ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E106 
+BAST  085   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 1    HSM       lreardon@rtc.edu                                             ADULT BASIC ED III       B561  BAST 085001D311 
+BAST  080   001  MTWRF      0900 1200 H 0020 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADULT BASIC EDUCATION I  B561  BAST 080001D111 
+BAST  082   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADULT BASIC EDUCATION II B561  BAST 082001D211 
+BAST  083   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 6    VSM       lreardon@rtc.edu                                             BASIC GED PREPARATION    B561  BAST 083001D411 
+BAST  083   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 7    VSM       lreardon@rtc.edu                                             BASIC GED PREPARATION    B561  BAST 083001D501 
+BAST  083   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 8    VSM       lreardon@rtc.edu                                             BASIC GED PREPARATION    B561  BAST 083001D511 
+BAST  086   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADVANCED GED PREPARATION B561  BAST 086001D611 
+BAST  090   001  MTWRF      0900 1200 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             BRUSH UP FOR TECH PROG   B561  BAST 090001D880 
+BAST  085   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 1    HSM       lreardon@rtc.edu                                             ADULT BASIC ED III       B561  BAST 085001D312 
+BAST  080   001  MTWRF      1230 1430 H 0020 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADULT BASIC EDUCATION I  B561  BAST 080001D112 
+BAST  082   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADULT BASIC EDUCATION II B561  BAST 082001D212 
+BAST  083   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 9    VSM       lreardon@rtc.edu                                             BASIC GED PREPARATION    B561  BAST 083001D512 
+BAST  084   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADULT BASIC EDUCATION IV B561  BAST 084001D412 
+BAST  086   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             ADVANCED GED PREPARATION B561  BAST 086001D612 
+BAST  090   001  MTWRF      1230 1430 H 0025 KNTLC    20150706 20150828 1    VSM       lreardon@rtc.edu                                             BRUSH UP FOR TECH PROG   B561  BAST 090001D881 
+WHFRS 201   001  RS         1700 2100 H 0008 L105A    20150716 20150718 1    VSM       ahaeckl@RTC.edu                                              FORKLIFT TRAINING        B561  WHFRS201001Q602 
+WHFRS 101   001  RS         1700 2100 H 0008 L105A    20150716 20150725 1    HSM       ahaeckl@RTC.edu                                              FORKLIFT TRAINING        B561  WHFRS101001Q601 
+BAST  076   001  MTWR       1300 1530 H 0075 MSC      20150706 20150828 1    HSM                                                                    BASIC HS COMPLETION      B561  BAST 076001D921 
+BAST  096   001  MTWR       1300 1530 H 0075 MSC      20150706 20150828 1    VSM                                                                    ADV HS COMPLETION        B561  BAST 096001D931 
+BAST  030   001  MTWR                 H 0025 N204     20150706 20150811 1    ASM       kstenslie@RTC.edu                                            STUDENT SUCC F/ECC IBEST B561  BAST 030001D889 
+BAST  014   001  MTWRF                H 0025 ONLINE   20150706 20150811 1    ASM       neng@rtc.edu                                                 ADVANCED ESL ONLINE      B561  BAST 014001W314 
+BAST  085   001  MTWR       0730 0900 H 0025 RJC      20150706 20150811 1    HSM                                                                    ADULT BASIC ED III       B561  BAST 085001D305 
+BAST  080   001  MTWR       0730 0900 H 0020 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION I  B561  BAST 080001D105 
+BAST  082   001  MTWR       0730 0900 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION II B561  BAST 082001D205 
+BAST  083   001  MTWR       0730 0900 H 0025 RJC      20150706 20150811 10   VSM                                                                    BASIC GED PREPARATION    B561  BAST 083001D505 
+BAST  084   001  MTWR       0730 0900 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION IV B561  BAST 084001D405 
+BAST  086   001  MTWR       0730 0900 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADVANCED GED PREPARATION B561  BAST 086001D605 
+BAST  085   001  MTWRF      0900 1100 H 0025 RJC      20150706 20150811 1    HSM                                                                    ADULT BASIC ED III       B561  BAST 085001D306 
+BAST  080   001  MTWRF      0900 1100 H 0020 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION I  B561  BAST 080001D106 
+BAST  082   001  MTWRF      0900 1100 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION II B561  BAST 082001D206 
+BAST  083   001  MTWRF      0900 1100 H 0025 RJC      20150706 20150811 11   VSM                                                                    BASIC GED PREPARATION    B561  BAST 083001D506 
+BAST  084   001  MTWRF      0900 1100 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADULT BASIC EDUCATION IV B561  BAST 084001D406 
+BAST  086   001  MTWRF      0900 1100 H 0025 RJC      20150706 20150811 1    VSM                                                                    ADVANCED GED PREPARATION B561  BAST 086001D606 
+BAST  076   001  MTWRF      0900 1200 H 0075 RLC      20150706 20150828 1    HSM       kdavis@RTC.edu                                               BASIC HS COMPLETION      B561  BAST 076001E911 
+BAST  096   001  MTWRF      0900 1200 H 0075 RLC      20150706 20150828 1    VSM       kdavis@RTC.edu                                               ADV HS COMPLETION        B561  BAST 096001E917 
+BAST  076   001  MTWRF      1230 1530 H 0075 RLC      20150706 20150828 1    HSM       kdavis@RTC.edu                                               BASIC HS COMPLETION      B561  BAST 076001E912 
+BAST  096   001  MTWRF      1230 1530 H 0075 RLC      20150706 20150828 1    VSM       kdavis@RTC.edu                                               ADV HS COMPLETION        B561  BAST 096001E916 
+BAST  059   001  MTWR       1800 2100 H 0020 RNTLC    20150706 20150828 1    HSM       kstenslie@RTC.edu                                            ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E111 
+BAST  058   001  MTWR       1800 2100 H 0025 RNTLC    20150706 20150828 5    VSM       kstenslie@RTC.edu                                            ESL LEVEL VI             B561  BAST 058001E611 
+BAST  059   001  MTWR       1800 2100 H 0025 RNTLC    20150706 20150828 1    VSM       kstenslie@RTC.edu                                            ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E511 
+BAST  061   001  MTWR       1800 2100 H 0025 RNTLC    20150706 20150828 5    VSM       kstenslie@RTC.edu                                            ESL LEVEL II             B561  BAST 061001E211 
+BAST  062   001  MTWR       1800 2100 H 0025 RNTLC    20150706 20150828 12   VSM       kstenslie@RTC.edu                                            ESL LEVEL III            B561  BAST 062001E311 
+BAST  063   001  MTWR       1800 2100 H 0025 RNTLC    20150706 20150828 5    VSM       kstenslie@RTC.edu                                            ESL LEVEL IV             B561  BAST 063001E411 
+BAST  082   001  MTWR       1800 2100 H 0025 RNTWKSC  20150706 20150827 1    VSM       dgreenwell@RTC.edu                                           ADULT BASIC EDUCATION II B561  BAST 082001D217 
+BAST  083   001  MTWR       1800 2100 H 0025 RNTWKSC  20150706 20150827 5    VSM       dgreenwell@RTC.edu                                           BASIC GED PREPARATION    B561  BAST 083001D517 
+BAST  084   001  MTWR       1800 2100 H 0025 RNTWKSC  20150706 20150827 1    VSM       dgreenwell@RTC.edu                                           ADULT BASIC EDUCATION IV B561  BAST 084001D417 
+BAST  090   001  MTWR       1800 2100 H 0025 RNTWKSC  20150706 20150827 1    VSM       dgreenwell@RTC.edu                                           BRUSH UP FOR TECH PROG   B561  BAST 090001D885 
+BAST  026   001  MTWRF      0830 1130 H 0025 RNTWKSC  20150706 20150828 1    ASM                                                                    ESL ORIENT/GOAL SETTING  B561  BAST 026001E728 
+BAST  026   001  MTWRF      1215 1500 H 0025 RNTWKSC  20150706 20150828 1    ASM                                                                    ESL ORIENT/GOAL SETTING  B561  BAST 026001E729 
+BAST  052   001  TW         1800 2100 H 0025 RNTWKSC  20150706 20150707 1    VSM       dgreenwell@RTC.edu                                           EDUCATIONAL PLAN & GOAL  B561  BAST 052001D849 
+BAST  085   001  TWR        1800 2100 H 0025 RNTWKSC  20150706 20150827 1    HSM       dgreenwell@RTC.edu                                           ADULT BASIC ED III       B561  BAST 085001D317 
+BAST  059   001  MTWRF      0830 1130 H 0020 RNTWKSR  20150706 20150828 1    HSM                                                                    ESL LEVEL I: BEG ESL LIT B561  BAST 059001E100 
+BAST  058   001  MTWRF      0830 1130 H 0025 RNTWKSR  20150706 20150828 6    VSM                                                                    ESL LEVEL VI             B561  BAST 058001E600 
+BAST  061   001  MTWRF      0830 1130 H 0025 RNTWKSR  20150706 20150828 3    VSM                                                                    ESL LEVEL II             B561  BAST 061001E200 
+BAST  062   001  MTWRF      0830 1130 H 0025 RNTWKSR  20150706 20150828 13   VSM                                                                    ESL LEVEL III            B561  BAST 062001E300 
+BAST  063   001  MTWRF      0830 1130 H 0025 RNTWKSR  20150706 20150828 3    VSM                                                                    ESL LEVEL IV             B561  BAST 063001E400 
+BAST  064   001  MTWRF      0830 1130 H 0025 RNTWKSR  20150706 20150828 1    VSM                                                                    ESL LEVEL V              B561  BAST 064001E500 
+BAST  059   001  MTWRF      1215 1500 H 0020 RNTWKSR  20150706 20150828 1    HSM                                                                    ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E101 
+BAST  058   001  MTWRF      1215 1500 H 0025 RNTWKSR  20150706 20150828 7    VSM                                                                    ESL LEVEL VI             B561  BAST 058001E601 
+BAST  061   001  MTWRF      1215 1500 H 0025 RNTWKSR  20150706 20150828 4    VSM                                                                    ESL LEVEL II             B561  BAST 061001E201 
+BAST  062   001  MTWRF      1215 1500 H 0025 RNTWKSR  20150706 20150828 14   VSM                                                                    ESL LEVEL III            B561  BAST 062001E301 
+BAST  063   001  MTWRF      1215 1500 H 0025 RNTWKSR  20150706 20150828 4    VSM                                                                    ESL LEVEL IV             B561  BAST 063001E401 
+BAST  064   001  MTWRF      1215 1500 H 0025 RNTWKSR  20150706 20150828 1    VSM                                                                    ESL LEVEL V              B561  BAST 064001E501 
+BAST  052   001  MT         0830 1130 H 0025 RTNWKSC  20150706 20150707 1    ASM       cpomeroy@RTC.edu                                             EDUCATIONAL PLAN & GAOL  B561  BAST 052001D845 
+BAST  052   001  MT         1215 1500 H 0020 RTNWKSC  20150706 20150707 1    ASM       cpomeroy@RTC.edu                                             EDUCATIONAL PLAN & GOAL  B561  BAST 052001D846 
+BAST  086   001  MTWR       1800 2100 H 0025 RTNWKSC  20150706 20150827 1    VSM       dgreenwell@RTC.edu                                           ADVANCED GED PREPARATION B561  BAST 086001D617 
+BAST  080   001  MTWRF      0830 1130 H 0020 RTNWKSC  20150706 20150828 1    HSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION I  B561  BAST 080001D107 
+BAST  082   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION II B561  BAST 082001D207 
+BAST  083   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 12   VSM       cpomeroy@RTC.edu                                             BASIC GED PREPARATION    B561  BAST 083001D507 
+BAST  084   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION IV B561  BAST 084001D407 
+BAST  085   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC ED III       B561  BAST 085001D307 
+BAST  086   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADVANCED GED PREPARATION B561  BAST 086001D607 
+BAST  090   001  MTWRF      0830 1130 H 0025 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             BRUSH UP FOR TECH PROG   B561  BAST 090001D877 
+BAST  080   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    HSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION I  B561  BAST 080001D108 
+BAST  082   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION II B561  BAST 082001D208 
+BAST  083   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 13   VSM       cpomeroy@RTC.edu                                             BASIC GED PREPARATION    B561  BAST 083001D508 
+BAST  084   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC EDUCATION IV B561  BAST 084001D408 
+BAST  085   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADULT BASIC ED III       B561  BAST 085001D308 
+BAST  086   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             ADVANCED GED PREPARATION B561  BAST 086001D608 
+BAST  090   001  MTWRF      1215 1500 H 0020 RTNWKSC  20150706 20150828 1    VSM       cpomeroy@RTC.edu                                             BRUSH UP FOR TECH PROG   B561  BAST 090001D878 
+BAST  080   001  MTWRF      0830 1130 H 0020 WSAD     20150706 20150828 1    HSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION I  B561  BAST 080001D101 
+BAST  058   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 8    VSM       rnicholls@rtc.edu                                            ESL LEVEL VI             B561  BAST 058001E603 
+BAST  059   001  MTWRF      0830 1130 H 0020 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E103 
+BAST  062   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 15   VSM       rnicholls@rtc.edu                                            ESL LEVEL III            B561  BAST 062001E303 
+BAST  063   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            ESL LEVEL IV             B561  BAST 063001E403 
+BAST  064   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            ESL LEVEL V              B561  BAST 064001E503 
+BAST  066   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            TECHNICAL ESL            B561  BAST 066001E830 
+BAST  082   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION II B561  BAST 082001D201 
+BAST  084   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION IV B561  BAST 084001D401 
+BAST  085   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC ED III       B561  BAST 085001D301 
+BAST  086   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADVANCED GED PREPARATION B561  BAST 086001D601 
+BAST  090   001  MTWRF      0830 1130 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                BRUSH UP FOR TECH PROG   B561  BAST 090001D874 
+BAST  061   001  MTWRF      0830 1130 H 0025 WSAD     20150708 20150828 1    ASM       rnicholls@rtc.edu                                            ESL LEVEL II             B561  BAST 061001E203 
+BAST  080   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 1    HSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION I  B561  BAST 080001D102 
+BAST  058   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 9    VSM       rnicholls@rtc.edu                                            ESL LEVEL VI             B561  BAST 058001E604 
+BAST  059   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            ESL LEVEL I:BEG ESL LIT  B561  BAST 059001E104 
+BAST  061   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 2    VSM       rnicholls@rtc.edu                                            ESL LEVEL II             B561  BAST 061001E204 
+BAST  062   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 16   VSM       rnicholls@rtc.edu                                            ESL LEVEL III            B561  BAST 062001E304 
+BAST  063   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 2    VSM       rnicholls@rtc.edu                                            ESL LEVEL IV             B561  BAST 063001E404 
+BAST  064   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            ESL LEVEL V              B561  BAST 064001E504 
+BAST  066   001  MTWRF      1215 1500 H 0020 WSAD     20150706 20150828 1    VSM       rnicholls@rtc.edu                                            TECHNICAL ESL            B561  BAST 066001E831 
+BAST  082   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION II B561  BAST 082001D202 
+BAST  083   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 14   VSM       dchoi@rtc.edu                                                BASIC GED PREPARATION    B561  BAST 083001D502 
+BAST  084   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC EDUCATION IV B561  BAST 084001D402 
+BAST  085   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADULT BASIC ED III       B561  BAST 085001D302 
+BAST  086   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                ADVANCED GED PREPARATION B561  BAST 086001D602 
+BAST  090   001  MTWRF      1215 1500 H 0025 WSAD     20150706 20150828 1    VSM       dchoi@rtc.edu                                                BRUSH UP FOR TECH PROG   B561  BAST 090001D875 

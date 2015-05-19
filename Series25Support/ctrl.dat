@@ -1,0 +1,69 @@
+46                            FIRST COLUMN OF ROOM NAME                       01
+08                            LENGTH OF ROOM NAME FIELD                       02
+10                            LENGTH OF DAYS FIELD                            03
+U                             ABBREVIATION FOR SUNDAY                         04
+M                             ABBREVIATION FOR MONDAY                         05
+T                             ABBREVIATION FOR TUESDAY                        06
+W                             ABBREVIATION FOR WEDNESDAY                      07
+R                             ABBREVIATION FOR THURSDAY                       08
+F                             ABBREVIATION FOR FRIDAY                         09
+S                             ABBREVIATION FOR SATURDAY                       10
+18                            FIRST COLUMN OF DAYS FIELD                      11
+29                            START HOURS (FIRST COLUMN)                      12
+31                            START MINUTES (FIRST COLUMN)                    13
+34                            FINISH HOURS (FIRST COLUMN)                     14
+36                            FINISH MINUTES (FIRST COLUMN)                   15
+39                            COLUMN OF A/P DESIGNATOR                        16
+41                            FIRST COLUMN OF FOUR COLUMN ENROLLMENT FIELD    17
+76                            COLUMN OF FIRST DIGIT OF THE CONFLICT DECIDER   18
+76                            COLUMN OF SECOND DIGIT OF THE CONFLICT DECIDER  19
+76                            COLUMN OF THIRD DIGIT OF THE CONFLICT DECIDER   20
+76                            COLUMN OF FOURTH DIGIT OF THE CONFLICT DECIDER  21
+76                            COLUMN OF FIFTH DIGIT OF THE CONFLICT DECIDER   22
+01                            FIRST COLUMN OF DEPARTMENTAL ID                 23
+0.10                          MINIMUM PERMISSIBLE RATIO ENROLLMENT/SEATS      24
+1.00                          ENROLLMENT ADJUSTER                             25
+****                          DEFAULT ENROLLMENT INDICATOR                    26
+0030                          DEFAULT ENROLLMENT                              27
+0.80                          MINIMUM CORRECT INPUT FRACTION                  28
+05                            LENGTH OF DEPARTMENTAL ID                       29
+21                            NUMBER OF WEEKS IN TERM                         30
+55                            FIRST COLUMN OF START WEEK                      31
+64                            FIRST COLUMN OF FINISH WEEK                     32
+DATES                         MINI-CLASSES?                                   33
+00                            EXTRA FINISH MINUTES                            34
+0600                          EARLIEST START TIME                             35
+2300                          LATEST FINISH TIME                              36
+YES                           SUM CROSS-LISTED ENROLLMENTS                    37
+196                           MAXIMUM LENGTH OF DESCRIPTOR RECORD             38
+04                            LENGTH OF YEAR                                  39
+55                            FIRST COLUMN OF BEGIN YEAR                      40
+59                            FIRST COLUMN OF BEGIN MONTH                     41
+61                            FIRST COLUMN OF BEGIN DAY OF MONTH              42
+64                            FIRST COLUMN OF END YEAR                        43
+68                            FIRST COLUMN OF END MONTH                       44
+70                            FIRST COLUMN OF END DAY OF MONTH                45
+180                           FIRST COLUMN OF CRN (CALL NUMBER)               46
+16                            LENGTH OF CRN (CALL NUMBER)                     47
+149                           FIRST COLUMN OF COURSE NAME                     48
+24                            LENGTH OF COURSE NAME                           49
+01                            FIRST COLUMN OF SUBJECT                         50
+05                            LENGTH OF SUBJECT                               51
+13                            FIRST COLUMN OF SECTION NUMBER                  52
+03                            LENGTH OF SECTION NUMBER                        53
+07                            FIRST COLUMN OF CATALOG NUMBER                  54
+04                            LENGTH OF CATALOG NUMBER                        55
+174                           FIRST COLUMN OF TERM IDENTIFIER                 56
+04                            LENGTH OF TERM IDENTIFIER                       57
+73                            FIRST COLUMN OF MEETING NUMBER                  58
+01                            LENGTH OF MEETING PATTERN NUMBER                59
+149                           FIRST COLUMN OF COURSE TITLE                    60
+24                            LENGTH OF COURSE TITLE                          61
+88                            FIRST COLUMN OF INSTRUCTOR                      62
+20                            LENGTH OF INSTRUCTOR                            63
+00                            FIRST COLUMN OF EVENT TYPE                      64
+00                            LENGTH OF EVENT TYPE                            65
+00                            FIRST COLUMN OF CAMPUS CODE                     66
+00                            LENGTH OF CAMPUS CODE                           67
+78                            FIRST COLUMN OF ASSIGNMENT                      68
+03                            LENGTH OF ASSIGNMENT FIELD                      69
