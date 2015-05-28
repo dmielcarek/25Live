@@ -1,6 +1,6 @@
 USE [ODS]
 GO
-/****** Object:  StoredProcedure [dbo].[usp_25LiveDataInFile]    Script Date: 05/06/2015 09:49:55 ******/
+/****** Object:  StoredProcedure [dbo].[usp_25LiveDataInFile]    Script Date: 5/28/2015 4:30:50 PM ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -13,6 +13,9 @@ MODIFIED:
 04/16/2015   Smruthi Madhugiri  Updated the stored procedure to replace day values with the values UCP Interface understands.
 04/20/2015   Smruthi Madhugiri  Updated the procedure to have instructor Email instead of Instructor Name.
 06/05/2015   Smruthi Madhugiri  Updated the procedure to include ItemNumber to CRN to make it unique.
+13/05/2015   David Schieber     Updated the procedure to remove WorkEmail from selection criteria for CTE1 while adding Catalog and RoomName.
+					            And replaced WorkEmail with RoomName in CTE2 partition and order by, and CTE5 and CTE4 union order by.
+14/05/2015   David Schieber     Updated the procedure to remove EndTime and FinishWeek from CTE2 partition.
 ****************************************************************************************************************************************************/
 ALTER PROCEDURE [dbo].[usp_25LiveDataInFile] WITH RECOMPILE
 AS 
@@ -75,14 +78,14 @@ WHERE YearQuarterID = @NextYearQuarter and ((ISNULL(SectionStatusID1,'') NOT IN 
 *********************************************************************************************************************************************/
 CTE1 AS 
 (SELECT distinct a.RoomName, a.Days, a.ClassID, a.ClusterItemNumber, a.StartTime, a.EndTime, a.StartHours, a.StartMinutes, a.FinishHours, a.FinishMinutes, a.APDesignator, a.Enrollment, a.DepartmentID, a.StartWeek, a.FinishWeek, a.CRN, a.CourseName, a.Section, a.Catalog, a.Term, a.WorkEmail
-FROM CTE a inner join CTE b ON a.WorkEmail = b.WorkEmail and a.StartTime = b.StartTime and a.StartWeek = b.StartWeek and a.Days = b.Days and a.Section <>  b.Section),
+FROM CTE a inner join CTE b ON a.StartTime = b.StartTime and a.StartWeek = b.StartWeek and a.Days = b.Days and (a.catalog <> b.catalog or a.section <> b.section) and a.RoomName = b.RoomName),
 
 /***********************************************************************************************************************************************
  Created CTE2 to assign NSM, WSM, HSM, VSM values. The GroupNumber created at this step is important since the grouping and order
  of the NSM, WSM and HSM, VSM values needs to be maintained for 25Live to understand primary class and secondary classes.
 ***********************************************************************************************************************************************/
 CTE2 AS 
-(SELECT RoomName, Days, ClassID, ClusterItemNumber, StartTime, endtime, StartHours, StartMinutes, FinishHours, FinishMinutes, APDesignator, Enrollment, DepartmentID, StartWeek, FinishWeek, CRN, CourseName, Section, Catalog, term, WorkEmail, ROW_NUMBER() over (partition by WorkEmail, starttime, endtime, startweek, finishweek, days order by WorkEmail,starttime, endtime,startweek, finishweek, days) as groupNumber
+(SELECT RoomName, Days, ClassID, ClusterItemNumber, StartTime, endtime, StartHours, StartMinutes, FinishHours, FinishMinutes, APDesignator, Enrollment, DepartmentID, StartWeek, FinishWeek, CRN, CourseName, Section, Catalog, term, WorkEmail, ROW_NUMBER() over (partition by RoomName, starttime, startweek, days order by RoomName, starttime, endtime, startweek, finishweek, days) as groupNumber
 from CTE1),
 
 /***********************************************************************************************************************************************
@@ -90,7 +93,7 @@ from CTE1),
  **********************************************************************************************************************************************/
 -- Where Clustered Items is not null 
 CTE3 AS
-(SELECT a.RoomName, a.Days, a.ClassID, a.ClusterItemNumber, a.StartTime, a.EndTime, a.StartHours, a.StartMinutes, a.FinishHours, a.FinishMinutes, a.APDesignator, a.Enrollment, a.DepartmentID, a.StartWeek, a.FinishWeek, a.CRN, a.CourseName, a.Section, a.Catalog, a.Term, a.WorkEmail
+/*(SELECT a.RoomName, a.Days, a.ClassID, a.ClusterItemNumber, a.StartTime, a.EndTime, a.StartHours, a.StartMinutes, a.FinishHours, a.FinishMinutes, a.APDesignator, a.Enrollment, a.DepartmentID, a.StartWeek, a.FinishWeek, a.CRN, a.CourseName, a.Section, a.Catalog, a.Term, a.WorkEmail
 , CASE WHEN (a.RoomName IS NULL or a.RoomName = '') and (SUBSTRING(a.ClassID, 1 , 4) = a.ClusterItemNumber) THEN 'NSM'
 	   WHEN (a.RoomName IS NULL or a.RoomName = '') and (SUBSTRING(a.ClassID, 1 , 4) <> a.ClusterItemNumber) THEN 'WSM'
 	   WHEN (a.RoomName IS NOT NULL) and (SUBSTRING(a.ClassID, 1,4) = a.ClusterItemNumber) THEN 'HSM'
@@ -102,15 +105,16 @@ WHERE a.ClusterItemNumber is not null
 
 UNION ALL
 
+*/
 -- Where Clustered Items is null
-SELECT RoomName, Days, ClassID, ClusterItemNumber, StartTime, endtime, StartHours, StartMinutes, FinishHours, FinishMinutes, APDesignator, Enrollment, DepartmentID, StartWeek, FinishWeek, CRN, CourseName, Section, Catalog, term, WorkEmail,
+(SELECT RoomName, Days, ClassID, ClusterItemNumber, StartTime, endtime, StartHours, StartMinutes, FinishHours, FinishMinutes, APDesignator, Enrollment, DepartmentID, StartWeek, FinishWeek, CRN, CourseName, Section, Catalog, term, WorkEmail,
 CASE WHEN RoomName IS NULL and GroupNumber = 1 THEN 'NSM'
 	 WHEN RoomName IS NULL and GroupNumber <> 1 THEN 'WSM'
 	 WHEN RoomName IS NOT NULL and Groupnumber = 1 THEN 'HSM'
 	 WHEN RoomName IS NOT NULL AND GroupNumber <> 1 THEN 'VSM'
 END AS AssigmentField
 FROM CTE2
-WHERE ClusterItemNumber is null
+--WHERE ClusterItemNumber is null
 ),
 
 /***********************************************************************************************************************************************
@@ -147,7 +151,7 @@ UNION ALL
 SELECT RoomName, Days, ClassID,  StartTime, endtime, StartHours, StartMinutes, FinishHours, FinishMinutes, APDesignator, Enrollment, DepartmentID, StartWeek, FinishWeek, CRN, CourseName, Section, Catalog, term, WorkEmail,AssignmentField, '1' as MeetingNumber
 FROM CTE4
 WHERE ClassID NOT IN (select distinct ClassID FROM CTE5)
-ORDER BY WorkEmail, Days, StartTime, EndTime, StartWeek, FinishWeek, AssignmentField, DepartmentID, Catalog, MeetingNumber
+ORDER BY RoomName, Days, StartTime, EndTime, StartWeek, FinishWeek, AssignmentField, DepartmentID, Catalog, MeetingNumber
 
         
         END TRY
@@ -158,3 +162,4 @@ ORDER BY WorkEmail, Days, StartTime, EndTime, StartWeek, FinishWeek, AssignmentF
         
         SET NOCOUNT OFF
     END    
+
