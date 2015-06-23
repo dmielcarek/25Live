@@ -1,3 +1,9 @@
+# Disclaimer
+
+This tool is made available for the convenience of the Washington Community and
+Technical College System. Bellevue College does not support, warranty or assist
+in the use of the tool.
+
 # Project Overview
 
 The goal of this project is to provide an auto generated file (based on the
