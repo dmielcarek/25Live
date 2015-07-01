@@ -15,8 +15,8 @@ namespace _25Live
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "CreateDatain", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{yearQuarter}",
+                defaults: new { controller = "CreateDatain", action = "Index", yearQuarter = UrlParameter.Optional }
             );
         }
     }
