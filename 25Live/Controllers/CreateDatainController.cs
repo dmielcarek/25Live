@@ -16,10 +16,10 @@ namespace _25Live.Controllers
         {
             return View("Index");
         }
-        public ActionResult CreateNewFile()
+        public ActionResult CreateNewFile(String yearQuarter)
         {
             ctrl obj = new ctrl();
-            IDictionary<string, string> dict = obj.createDataInFile();
+            IDictionary<string, string> dict = obj.createDataInFile(yearQuarter);
             string status = dict["status"]; 
            
             if ((String.Compare(status, "success", true)) == 0)

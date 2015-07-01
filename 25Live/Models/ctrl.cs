@@ -63,14 +63,20 @@ namespace _25Live.Models
             return result;
         }
 
-        public String getData()
+        public String getData(String yearQuarter)
         {
             try
             {
                 DataTable dt = new DataTable();
                 String cs = System.Configuration.ConfigurationManager.ConnectionStrings["ClassDal"].ConnectionString;
                 SqlConnection con = new SqlConnection(cs);
-                SqlCommand com = new SqlCommand("Execute usp_25LiveDataInFile", con);
+                SqlCommand com = new SqlCommand("usp_25LiveDataInFile", con);
+
+                com.CommandType = CommandType.StoredProcedure;
+                //Add your parameters
+                String yearQ = yearQuarter; //"B561";
+                com.Parameters.AddWithValue("@DataInYearQuarter", yearQ);
+
                 com.CommandTimeout = 300;// 5 min
                 com.Connection = con;
                 con.Open();
@@ -137,7 +143,7 @@ namespace _25Live.Models
             return value.ToString("yyyyMMddHHmmss");
         }
 
-        public IDictionary<string, string> createDataInFile()
+        public IDictionary<string, string> createDataInFile(String yearQuarter)
         {
             IDictionary<string, string> dict = new Dictionary<string, string>(); // Will be used for return values
             String message = "";
@@ -186,7 +192,7 @@ namespace _25Live.Models
 
                 //Call the stored procedure to get data
                 //loop through the records
-                String classRows = getData();
+                String classRows = getData(yearQuarter);
                 
 
                 if (!string.IsNullOrEmpty(classRows))
