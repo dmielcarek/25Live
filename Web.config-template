@@ -14,6 +14,11 @@
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="25LiveUSP" value="usp_25LiveDataInFile" />
+    <!--
+		lccLogPath example: E:\25LiveData\logs\25LiveLog
+		lccIdTranslationsPath example: E:\25LiveData\IdTranslations.txt
+		lccDebugIP example: 123.123.123.123
+    -->
     <add key="lccLogPath" value="" />
     <add key="lccIdTranslationsPath" value="" />
     <add key="lccDebugIP" value="" />
@@ -52,7 +57,7 @@
       Configuration for Ctrl data.
     -->
     <add key="ColRoomName" value="46" />
-    <add key="LengthRoomName" value="8" />
+    <add key="LengthRoomName" value="9" />
     <add key="ColDays" value="18" />
     <add key="LengthDays" value="10" />
     <add key="ColStartHours" value="29" />
@@ -94,7 +99,7 @@
     <add key="ArchivePath" value="C:\25LiveData\archives\" />
   </appSettings>
   <connectionStrings>
-    <add name="ClassDal" connectionString="Data Source=[server];Initial Catalog=ODS;user id=[user];password=[password]" providerName="System.Data.SqlClient" />
+    <add name="ClassDal" connectionString="Data Source=[server];Initial Catalog=ODS;Integrated Security=True" providerName="System.Data.SqlClient" />
   </connectionStrings>
   <system.web>
     <authentication mode="None" />
