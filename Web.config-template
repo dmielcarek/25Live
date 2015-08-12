@@ -14,6 +14,9 @@
     <add key="ClientValidationEnabled" value="true" />
     <add key="UnobtrusiveJavaScriptEnabled" value="true" />
     <add key="25LiveUSP" value="usp_25LiveDataInFile" />
+    <!-- Please add a trailing slash to both the path's below-->
+    <add key="FilePath" value="C:\25LiveData\" />
+    <add key="ArchivePath" value="C:\25LiveData\archives\" />
     <!--
 		lccLogPath example: E:\25LiveData\logs\25LiveLog
 		lccIdTranslationsPath example: E:\25LiveData\IdTranslations.txt
@@ -35,10 +38,10 @@
        8 - [CreateDataInFile] Archiving File
        9 - [CreateDataInFile] Writing to File
        10 - [CreateDataInFile] Finished
-       11 - ReadAllSettings Key/Values read
-       12 - ReadAllSettings Finished
-       13 - ReadSetting Started
-       14 - ReadSeting Finished
+       11 - [ReadAllSettings] Key/Values read
+       12 - [ReadAllSettings] Finished
+       13 - [ReadSetting] Started
+       14 - [ReadSetting] Finished
        16 - [CreateDataInFile] Launching getData
        17 - [CreateDataInFile] Prevent USP from running (getData), test without SQL process
        18 - [lccFTranslateId] Started
@@ -56,47 +59,46 @@
     <!--
       Configuration for Ctrl data.
     -->
-    <add key="ColRoomName" value="46" />
-    <add key="LengthRoomName" value="9" />
+    <add key="ColAP" value="39" />
+    <add key="ColAssignment" value="78" />
+    <add key="ColBeginDay" value="61" />
+    <add key="ColBeginMonth" value="59" />
+    <add key="ColBeginYear" value="55" />
+    <add key="ColCatalog" value="7" />
+    <add key="ColCourse" value="149" />
+    <add key="ColCRN" value="180" />
     <add key="ColDays" value="18" />
-    <add key="LengthDays" value="10" />
-    <add key="ColStartHours" value="29" />
-    <add key="ColStartMinutes" value="31" />
+    <add key="ColDepartmentId" value="1" />
+    <add key="ColEndDay" value="70" />
+    <add key="ColEndMonth" value="68" />
+    <add key="ColEndYear" value="64" />
+    <add key="ColEnrollment" value="41" />
+    <add key="ColEvent" value="82" />
     <add key="ColFinishtHours" value="34" />
     <add key="ColFinishtMinutes" value="36" />
-    <add key="ColAP" value="39" />
-    <add key="ColEnrollment" value="41" />
-    <add key="LengthEnrollment" value="4" />
-    <add key="ColDepartmentId" value="1" />
-    <add key="LengthDepartmentId" value="5" />
-    <add key="ColBeginYear" value="55" />
-    <add key="ColBeginMonth" value="59" />
-    <add key="ColBeginDay" value="61" />
-    <add key="ColEndYear" value="64" />
-    <add key="ColEndMonth" value="68" />
-    <add key="ColEndDay" value="70" />
-    <add key="LengthYear" value="4" />
-    <add key="ColCRN" value="180" />
-    <add key="LengthCRN" value="16" />
-    <add key="ColSection" value="13" />
-    <add key="LengthSection" value="4" />
-    <add key="ColCatalog" value="7" />
-    <add key="LengthCatalog" value="5" />
-    <add key="ColTerm" value="174" />
-    <add key="LengthTerm" value="5" />
-    <add key="ColMeeting" value="73" />
-    <add key="LengthMeeting" value="2" />
-    <add key="ColCourse" value="149" />
-    <add key="LengthCourse" value="24" />
     <add key="ColInstructor" value="88" />
-    <add key="LengthInstructor" value="60" />
-    <add key="ColEvent" value="82" />
-    <add key="LengthEvent" value="5" />
-    <add key="ColAssignment" value="78" />
+    <add key="ColMeeting" value="73" />
+    <add key="ColRoomName" value="46" />
+    <add key="ColStartHours" value="29" />
+    <add key="ColStartMinutes" value="31" />
+    <add key="ColSection" value="13" />
+    <add key="ColTerm" value="174" />
+
     <add key="LengthAssignment" value="3" />
-    <!-- Please add a trailing slash to both the path's below-->
-    <add key="FilePath" value="C:\25LiveData\" />
-    <add key="ArchivePath" value="C:\25LiveData\archives\" />
+    <add key="LengthCatalog" value="5" />
+    <add key="LengthCourse" value="24" />
+    <add key="LengthCRN" value="16" />
+    <add key="LengthDays" value="10" />
+    <add key="LengthDepartmentId" value="5" />
+    <add key="LengthEnrollment" value="4" />
+    <add key="LengthEvent" value="5" />
+    <add key="LengthInstructor" value="60" />
+    <add key="LengthMeeting" value="2" />
+    <add key="LengthRoomName" value="9" />
+    <add key="LengthSection" value="4" />
+    <add key="LengthTerm" value="5" />
+    <add key="LengthYear" value="4" />
+	
   </appSettings>
   <connectionStrings>
     <add name="ClassDal" connectionString="Data Source=[server];Initial Catalog=ODS;Integrated Security=True" providerName="System.Data.SqlClient" />
