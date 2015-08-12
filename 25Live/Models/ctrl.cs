@@ -179,6 +179,7 @@ namespace _25Live.Models
 
         public IDictionary<string, string> createDataInFile(String yearQuarter)
         {
+            int lccIObjectsCount = 0;
             IDictionary<string, string> dict = new Dictionary<string, string>(); // Will be used for return values
             String message = "";
             var filename = "";
@@ -201,8 +202,8 @@ namespace _25Live.Models
                 var lenDays = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthDays"]);
                 var colStartHours = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColStartHours"]);
                 var colStartMinutes = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColStartMinutes"]);
-                var colFinishtHours = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishtHours"]);
-                var colFinishtMinutes = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishtMinutes"]);
+                var colFinishHours = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishHours"]);
+                var colFinishMinutes = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishMinutes"]);
                 var colAP = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColAP"]);
                 var colEnrollment = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEnrollment"]);
                 var lenEnrollment = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthEnrollment"]);
@@ -251,6 +252,7 @@ namespace _25Live.Models
 
                         foreach (JObject root in objects)
                         {
+                            lccIObjectsCount++;
                             var apDesignator = root.GetValue("APDesignator").ToString().Trim();
                             var assignment = root.GetValue("AssignmentField").ToString().Trim();
                             var catalog = root.GetValue("Catalog").ToString().Trim(); // Course Number
@@ -272,26 +274,26 @@ namespace _25Live.Models
                             var term = root.GetValue("term").ToString().Trim(); // YearQuarterID
                             var instructorEmail = root.GetValue("WorkEmail").ToString().Trim();
 
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [APDesignator] Value [" + root.GetValue("APDesignator").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [AssignmentField] Value [" + root.GetValue("AssignmentField").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Catalog] Value [" + root.GetValue("Catalog").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [ClassID] Value [" + root.GetValue("ClassID").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CourseName] Value [" + root.GetValue("CourseName").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CRN] Value [" + root.GetValue("CRN").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Days] Value [" + root.GetValue("Days").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [DepartmentID] Value [" + root.GetValue("DepartmentID").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Enrollment] Value [" + root.GetValue("Enrollment").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishHours] Value [" + root.GetValue("FinishHours").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishMinutes] Value [" + root.GetValue("FinishMinutes").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishWeek] Value [" + root.GetValue("FinishWeek").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [MeetingNumber] Value [" + root.GetValue("MeetingNumber").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [RoomName] Value [" + root.GetValue("RoomName").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Section] Value [" + root.GetValue("Section").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartHours] Value [" + root.GetValue("StartHours").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartMinutes] Value [" + root.GetValue("StartMinutes").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartWeek] Value [" + root.GetValue("StartWeek").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [term] Value [" + root.GetValue("term").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [WorkEmail] Value [" + root.GetValue("WorkEmail").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [APDesignator] Value ["+root.GetValue("APDesignator").ToString().Length.ToString()+"][" + root.GetValue("APDesignator").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [AssignmentField] Value ["+root.GetValue("AssignmentField").ToString().Length.ToString()+"][" + root.GetValue("AssignmentField").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Catalog] Value ["+root.GetValue("Catalog").ToString().Length.ToString()+"][" + root.GetValue("Catalog").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [ClassID] Value ["+root.GetValue("ClassID").ToString().Length.ToString()+"][" + root.GetValue("ClassID").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CourseName] Value ["+root.GetValue("CourseName").ToString().Length.ToString()+"][" + root.GetValue("CourseName").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CRN] Value ["+root.GetValue("CRN").ToString().Length.ToString()+"][" + root.GetValue("CRN").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Days] Value ["+root.GetValue("Days").ToString().Length.ToString()+"][" + root.GetValue("Days").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [DepartmentID] Value ["+root.GetValue("DepartmentID").ToString().Length.ToString()+"][" + root.GetValue("DepartmentID").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Enrollment] Value ["+root.GetValue("Enrollment").ToString().Length.ToString()+"][" + root.GetValue("Enrollment").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishHours] Value ["+root.GetValue("FinishHours").ToString().Length.ToString()+"][" + root.GetValue("FinishHours").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishMinutes] Value ["+root.GetValue("FinishMinutes").ToString().Length.ToString()+"][" + root.GetValue("FinishMinutes").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishWeek] Value ["+root.GetValue("FinishWeek").ToString().Length.ToString()+"][" + root.GetValue("FinishWeek").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [MeetingNumber] Value ["+root.GetValue("MeetingNumber").ToString().Length.ToString()+"][" + root.GetValue("MeetingNumber").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [RoomName] Value ["+root.GetValue("RoomName").ToString().Length.ToString()+"][" + root.GetValue("RoomName").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Section] Value ["+root.GetValue("Section").ToString().Length.ToString()+"][" + root.GetValue("Section").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartHours] Value ["+root.GetValue("StartHours").ToString().Length.ToString()+"][" + root.GetValue("StartHours").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartMinutes] Value ["+root.GetValue("StartMinutes").ToString().Length.ToString()+"][" + root.GetValue("StartMinutes").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartWeek] Value ["+root.GetValue("StartWeek").ToString().Length.ToString()+"][" + root.GetValue("StartWeek").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [term] Value ["+root.GetValue("term").ToString().Length.ToString()+"][" + root.GetValue("term").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [WorkEmail] Value [" + root.GetValue("WorkEmail").ToString().Length+ "][" + root.GetValue("WorkEmail").ToString() + "]");
 
                             //generate line
                             var spacesToAdd = 0; // Initialising it for reuse.
@@ -309,8 +311,8 @@ namespace _25Live.Models
                             line = concatNewField(line, colDays, lenDays, days);
                             line = concatNewField(line, colStartHours, startHours.Length, startHours);
                             line = concatNewField(line, colStartMinutes, startMinutes.Length, startMinutes);
-                            line = concatNewField(line, colFinishtHours, finishHours.Length, finishHours);
-                            line = concatNewField(line, colFinishtMinutes, finishMinutes.Length, finishMinutes);
+                            line = concatNewField(line, colFinishHours, finishHours.Length, finishHours);
+                            line = concatNewField(line, colFinishMinutes, finishMinutes.Length, finishMinutes);
                             line = concatNewField(line, colAP, apDesignator.Length, apDesignator);
                             line = concatNewField(line, colEnrollment, lenEnrollment, enrollment);
                             line = concatNewField(line, colRoomName, lenRoomName, roomName);
@@ -324,7 +326,10 @@ namespace _25Live.Models
                             line = concatNewField(line, colCourse, lenCourse, courseName);
                             line = concatNewField(line, colTerm, lengthTerm, term);
                             line = concatNewField(line, colCRN, lenCRN, crn);
-                            line += System.Environment.NewLine;
+                            if (lccIObjectsCount < objects.Count)
+                            {
+                                line += System.Environment.NewLine;
+                            }
                             lccALLines.Append(line);
 
 
