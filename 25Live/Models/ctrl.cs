@@ -22,11 +22,11 @@ namespace _25Live.Models
             
             try
             {
-                lccTCTools.lccSCSettings.allConfigurations = ConfigurationManager.AppSettings;
-                lccTCTools.lccSCSettings.lccSLogLevels = lccTCTools.lccSCSettings.allConfigurations["lccLogLevels"];
-                lccTCTools.lccSCSettings.lccSLogPath = lccTCTools.lccSCSettings.allConfigurations["lccLogPath"];
-                lccTCTools.lccSCSettings.lccSIdTranslationsPath = lccTCTools.lccSCSettings.allConfigurations["lccIdTranslationsPath"];
-                lccTCTools.lccSCSettings.lccSDebugIP = lccTCTools.lccSCSettings.allConfigurations["lccDebugIP"];
+                lccTCTools.lccSCSettings.lccFBuildConfigurations(ConfigurationManager.AppSettings);
+                lccTCTools.lccSCSettings.lccSLogLevels = lccTCTools.lccFGetConfiguration("lccLogLevels");
+                lccTCTools.lccSCSettings.lccSLogPath = lccTCTools.lccFGetConfiguration("lccLogPath");
+                lccTCTools.lccSCSettings.lccSIdTranslationsPath = lccTCTools.lccFGetConfiguration("lccIdTranslationsPath");
+                lccTCTools.lccSCSettings.lccSDebugIP = lccTCTools.lccFGetConfiguration("lccDebugIP");
                 lccTCTools.lccFLoadTranslationPairs();
                 lccTCTools.lccSCSettings.lccFSetLogLevels();
                 if (lccTCTools.lccSCSettings.lccSDebugIP.Length > 0)
@@ -39,7 +39,7 @@ namespace _25Live.Models
                 }
                 lccTCTools.lccFLogInfo("0", "2", 1, "[ReadAllSettings] STARTED");
 
-                if (lccTCTools.lccSCSettings.allConfigurations.Count == 0)
+                if (lccTCTools.lccSCSettings.lccALConfigurations.Count == 0)
                 {
                     Console.WriteLine("AppSettings is empty.");
                 }
@@ -47,9 +47,11 @@ namespace _25Live.Models
                 {
                     lccTCTools.lccFLogInfo("0", "0", 1, "[ReadAllSettings] LogLevels [" + lccTCTools.lccSCSettings.lccSLogLevels + "]");
                     ///*
-                    foreach (var key in lccTCTools.lccSCSettings.allConfigurations.AllKeys)
+                    
+                    
+                    foreach (_25Live_New.lccTools.lccKeyValuePairClass lccKVPCLoop in lccTCTools.lccSCSettings.lccALConfigurations)
                     {
-                        lccTCTools.lccFLogInfo("0", "11", 1, "[ReadAllSettings] key  [" + key + "] value [" + lccTCTools.lccSCSettings.allConfigurations[key] + "]");
+                        lccTCTools.lccFLogInfo("0", "11", 1, "[ReadAllSettings] key  [" + lccKVPCLoop.lccSKey + "] value [" + lccKVPCLoop.lccSValue + "]");
                     }
                     //  * */
                     //return lccTCTools.lccSCSettings.appSettings;
@@ -91,7 +93,7 @@ namespace _25Live.Models
                 DataTable dt = new DataTable();
                 String cs = System.Configuration.ConfigurationManager.ConnectionStrings["ClassDal"].ConnectionString;
                 SqlConnection con = new SqlConnection(cs);
-                SqlCommand com = new SqlCommand(lccTCTools.lccSCSettings.allConfigurations["25LiveUSP"], con);
+                SqlCommand com = new SqlCommand(lccTCTools.lccFGetConfiguration("25LiveUSP"), con);
 
                 com.CommandType = CommandType.StoredProcedure;
                 //Add your parameters
@@ -183,6 +185,45 @@ namespace _25Live.Models
             IDictionary<string, string> dict = new Dictionary<string, string>(); // Will be used for return values
             String message = "";
             var filename = "";
+            int colAP = 0;
+            int colASM = 0;
+            int colBeginYear = 0;
+            int colBeginMonth = 0;
+            int colBeginDay = 0;
+            int colCatalog = 0;
+            int colCourse = 0;
+            int colCRN = 0;
+            int colDays = 0;
+            int colDepartmentID = 0;
+            int colEndYear = 0;
+            int colEndMonth = 0;
+            int colEndDay = 0;
+            int colEnrollment = 0;
+            int colEvent = 0; // This can be ignored and leave space)s
+            int colFinishHours = 0;
+            int colFinishMinutes = 0;
+            int colInstructor = 0;
+            int colMeeting = 0;
+            int colRoomName = 0;
+            int colSection = 0;
+            int colStartHours = 0;
+            int colStartMinutes = 0;
+            int colTerm = 0;
+
+            int lenASM = 0;
+            int lenCatalog = 0;
+            int lenCourse = 0;
+            int lenCRN = 0;
+            int lenDays = 0;
+            int lenDepartmentID = 0;
+            int lenEnrollment = 0;
+            int lenEvent = 0;
+            int lenInstructor = 0;
+            int lenMeeting = 0;
+            int lenRoomName = 0;
+            int lenSection = 0;
+            int lengthTerm = 0;
+
             string path = "";
             //string line = "";
             string line = "";
@@ -192,43 +233,44 @@ namespace _25Live.Models
                 ReadAllSettings();
                 lccTCTools.lccFLogInfo("0", "1", 1, "[createDataInFile] STARTED yearQuarter [" + yearQuarter + "]");
 
-                var colDepartmentID = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColDepartmentId"]);
-                var lenDepartmentID = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthDepartmentId"]);
-                var colCatalog = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColCatalog"]);
-                var lenCatalog = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthCatalog"]);
-                var colSection = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColSection"]);
-                var lenSection = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthSection"]);
-                var colDays = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColDays"]);
-                var lenDays = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthDays"]);
-                var colStartHours = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColStartHours"]);
-                var colStartMinutes = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColStartMinutes"]);
-                var colFinishHours = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishHours"]);
-                var colFinishMinutes = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColFinishMinutes"]);
-                var colAP = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColAP"]);
-                var colEnrollment = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEnrollment"]);
-                var lenEnrollment = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthEnrollment"]);
-                var colRoomName = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColRoomName"]);
-                var lenRoomName = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthRoomName"]);
-                var colBeginYear = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColBeginYear"]);
-                var colBeginMonth = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColBeginMonth"]);
-                var colBeginDay = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColBeginDay"]);
-                var colEndYear = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEndYear"]);
-                var colEndMonth = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEndMonth"]);
-                var colEndDay = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEndDay"]);
-                var colMeeting = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColMeeting"]);
-                var lenMeeting = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthMeeting"]);
-                var colASM = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColAssignment"]);
-                var lenASM = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthAssignment"]);
-                var colEvent = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColEvent"]); // This can be ignored and leave space)s
-                var lenEvent = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthEvent"]);
-                var colInstructor = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColInstructor"]);
-                var lenInstructor = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthInstructor"]);
-                var colCourse = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColCourse"]);
-                var lenCourse = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthCourse"]);
-                var colTerm = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColTerm"]);
-                var lengthTerm = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthTerm"]);
-                var colCRN = int.Parse(lccTCTools.lccSCSettings.allConfigurations["ColCRN"]);
-                var lenCRN = int.Parse(lccTCTools.lccSCSettings.allConfigurations["LengthCRN"]);
+                colAP = lccTCTools.lccFGetConfigurationInt("ColAP");
+                colASM = lccTCTools.lccFGetConfigurationInt("ColAssignment");
+                colBeginYear = lccTCTools.lccFGetConfigurationInt("ColBeginYear");
+                colBeginMonth = lccTCTools.lccFGetConfigurationInt("ColBeginMonth");
+                colBeginDay = lccTCTools.lccFGetConfigurationInt("ColBeginDay");
+                colCatalog = lccTCTools.lccFGetConfigurationInt("ColCatalog");
+                colCourse = lccTCTools.lccFGetConfigurationInt("ColCourse");
+                colCRN = lccTCTools.lccFGetConfigurationInt("ColCRN");
+                colDays = lccTCTools.lccFGetConfigurationInt("ColDays");
+                colDepartmentID = lccTCTools.lccFGetConfigurationInt("ColDepartmentId");
+                colEndYear = lccTCTools.lccFGetConfigurationInt("ColEndYear");
+                colEndMonth = lccTCTools.lccFGetConfigurationInt("ColEndMonth");
+                colEndDay = lccTCTools.lccFGetConfigurationInt("ColEndDay");
+                colEnrollment = lccTCTools.lccFGetConfigurationInt("ColEnrollment");
+                colEvent = lccTCTools.lccFGetConfigurationInt("ColEvent"); // This can be ignored and leave space)s
+                colFinishHours = lccTCTools.lccFGetConfigurationInt("ColFinishHours");
+                colFinishMinutes = lccTCTools.lccFGetConfigurationInt("ColFinishMinutes");
+                colInstructor = lccTCTools.lccFGetConfigurationInt("ColInstructor");
+                colMeeting = lccTCTools.lccFGetConfigurationInt("ColMeeting");
+                colRoomName = lccTCTools.lccFGetConfigurationInt("ColRoomName");
+                colSection = lccTCTools.lccFGetConfigurationInt("ColSection");
+                colStartHours = lccTCTools.lccFGetConfigurationInt("ColStartHours");
+                colStartMinutes = lccTCTools.lccFGetConfigurationInt("ColStartMinutes");
+                colTerm = lccTCTools.lccFGetConfigurationInt("ColTerm");
+
+                lenASM = lccTCTools.lccFGetConfigurationInt("LengthAssignment");
+                lenCatalog = lccTCTools.lccFGetConfigurationInt("LengthCatalog");
+                lenCourse = lccTCTools.lccFGetConfigurationInt("LengthCourse");
+                lenCRN = lccTCTools.lccFGetConfigurationInt("LengthCRN");
+                lenDays = lccTCTools.lccFGetConfigurationInt("LengthDays");
+                lenDepartmentID = lccTCTools.lccFGetConfigurationInt("LengthDepartmentId");
+                lenEnrollment = lccTCTools.lccFGetConfigurationInt("LengthEnrollment");
+                lenEvent = lccTCTools.lccFGetConfigurationInt("LengthEvent");
+                lenInstructor = lccTCTools.lccFGetConfigurationInt("LengthInstructor");
+                lenMeeting = lccTCTools.lccFGetConfigurationInt("LengthMeeting");
+                lenRoomName = lccTCTools.lccFGetConfigurationInt("LengthRoomName");
+                lenSection = lccTCTools.lccFGetConfigurationInt("LengthSection");
+                lengthTerm = lccTCTools.lccFGetConfigurationInt("LengthTerm");
 
                 //Call the stored procedure to get data
                 //loop through the records
@@ -339,10 +381,10 @@ namespace _25Live.Models
                             if (codeRanFlag == 0)
                             {
                                 filename = "datain" + term + ".dat";
-                                path = lccTCTools.lccSCSettings.allConfigurations["FilePath"] + filename;
+                                path = lccTCTools.lccFGetConfiguration("FilePath") + filename;
                                 // Check if the file exists.
                                 //If it exists that archive that file.
-                                var archivePath = lccTCTools.lccSCSettings.allConfigurations["ArchivePath"];
+                                var archivePath = lccTCTools.lccFGetConfiguration("ArchivePath");
                                 if (System.IO.File.Exists(path))
                                 {
                                     String timeStamp = GetTimestamp(DateTime.Now);
@@ -361,7 +403,7 @@ namespace _25Live.Models
                         {
                             lccTCTools.lccFLogInfo("0", "9", 1, "[createDataInFile] Writing to file [" + path+"]");
                             System.IO.StreamWriter file = new System.IO.StreamWriter(path);
-                            message += " A new file named " + filename + " is created at location " + lccTCTools.lccSCSettings.allConfigurations["FilePath"] + ".";
+                            message += " A new file named " + filename + " is created at location " + lccTCTools.lccFGetConfiguration("FilePath") + ".";
                             file.WriteLine(lccALLines.ToString());
                             file.Close();
                         }
@@ -377,6 +419,7 @@ namespace _25Live.Models
             {
                 message += "<hr>Process Finished.";
                 dict["message"] = "[createDataInFile] ERROR [" + ex.Message.ToString() + "]" + message + lccTCTools.lccFReturnLogOutput();
+                dict["message"] = "[createDataInFile] ERROR - Inner Exception [" + ex.InnerException.ToString() + "]" + message + lccTCTools.lccFReturnLogOutput();
                 dict["status"] = "failure";
 
             }

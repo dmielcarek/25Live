@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -14,25 +15,31 @@ namespace _25Live_New.lccTools
         public string lccFTranslateId(string lccParamSId)
         {
             bool lccBFound = false;
-            int lccIOrigLength = lccParamSId.Length;
+            int lccIOrigLength = 0;
             int lccILoop = 0;
+            string lccSUseLine = lccParamSId.Trim();
             string lccSReturn = lccParamSId;
             try
             {
-                lccFLogInfo("0", "18", 1, "[lccFTranslateId] Started - Id [" + lccParamSId+"]");
-                for (lccILoop = 0; lccILoop < lccSCSettings.lccALTranslationIdPairs.Count && lccBFound == false; lccILoop++)
+                lccIOrigLength = lccParamSId.Length;
+                lccFLogInfo("0", "18", 1, "[lccFTranslateId] Started - Id [" + lccParamSId + "]");
+                if (lccSCSettings.lccALTranslationIdPairs.Count > 0)
                 {
-                    lccFLogInfo("0", "19", 1, "[lccFTranslateId] Compare Id [" + lccParamSId + "] to Key [" + lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey + "]");
-                    if (lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey.Equals(lccParamSId) == true)
+                    lccFLogInfo("0", "18", 1, "[lccFTranslateId] Trimmed Version [" + lccSUseLine + "]");
+                    for (lccILoop = 0; lccILoop < lccSCSettings.lccALTranslationIdPairs.Count && lccBFound == false; lccILoop++)
                     {
-                        lccFLogInfo("0", "20", 1, "[lccFTranslateId] Match");
-                        lccBFound = true;
-                        lccSReturn = lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSValue;
-                        if (lccSReturn.Length < lccIOrigLength)
+                        lccFLogInfo("0", "19", 1, "[lccFTranslateId] Compare Id [" + lccSUseLine + "] to Key [" + lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey + "]");
+                        if (lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey.Equals(lccSUseLine) == true)
                         {
-                            lccFLogInfo("0", "20", 1, "[lccFTranslateId] Original Length [" + lccIOrigLength.ToString() + "] longer, Right Padding value [" + lccSReturn+"]");
-                            lccSReturn = lccSReturn.PadRight(lccIOrigLength, ' ');
-                            lccFLogInfo("0", "20", 1, "[lccFTranslateId] Right Padded value [" + lccSReturn + "]");
+                            lccFLogInfo("0", "20", 1, "[lccFTranslateId] Match");
+                            lccBFound = true;
+                            lccSReturn = lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSValue;
+                            if (lccSReturn.Length < lccIOrigLength)
+                            {
+                                lccFLogInfo("0", "20", 1, "[lccFTranslateId] Original Length [" + lccIOrigLength.ToString() + "] longer, Right Padding value [" + lccSReturn + "]");
+                                lccSReturn = lccSReturn.PadRight(lccIOrigLength, ' ');
+                                lccFLogInfo("0", "20", 1, "[lccFTranslateId] Right Padded value [" + lccSReturn + "]");
+                            }
                         }
                     }
                 }
@@ -80,7 +87,15 @@ namespace _25Live_New.lccTools
                     }
                     lccSRSource.Close();
                     lccFSSource.Close();
-                    lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] Loaded Records: "+lccSCSettings.lccALTranslationIdPairs.Count.ToString());
+
+                    if (lccSCSettings.lccALTranslationIdPairs.Count == 0)
+                    {
+                        lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] No translations provided.  Translations skipped.");
+                    }
+                    else
+                    {
+                        lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] Loaded Records: " + lccSCSettings.lccALTranslationIdPairs.Count.ToString());
+                    }
                 }
                 lccFLogInfo("0", "24", 1, "[lccFLoadTranslationPairs] Started");
                 lccBReturn = true;
@@ -105,6 +120,50 @@ namespace _25Live_New.lccTools
                 }
             }
             return lccSReturn;
+        }
+        public string lccFGetConfiguration(string lccParamSId)
+        {
+            bool lccBFound = false;
+            int lccILoop = 0;
+            string lccSReturn = "";
+            try
+            {
+                for (lccILoop = 0; lccILoop < lccSCSettings.lccALConfigurations.Count && lccBFound == false; lccILoop++)
+                {
+                    if (lccSCSettings.lccALConfigurations[lccILoop].lccSKey.Equals(lccParamSId) == true)
+                    {
+                        lccBFound = true;
+                        lccSReturn = lccSCSettings.lccALConfigurations[lccILoop].lccSValue;
+                    }
+                }
+            }
+            catch (Exception lccException)
+            {
+                lccFLogInfo("0", "0", 1, "[lccFGetConfiguration] ERROR: " + lccException.Message);
+            }
+            return lccSReturn;
+        }
+        public int lccFGetConfigurationInt(string lccParamSId)
+        {
+            int lccIReturn = 0;
+            string lccSValue = "";
+            try
+            {
+                lccSValue = lccFGetConfiguration(lccParamSId);
+                if (lccSCSettings.lccFParseValue(0, lccSValue).Length > 0)
+                {
+                    lccIReturn = int.Parse(lccSCSettings.lccFParseValue(0, lccSValue));
+                }
+                else
+                {
+                    lccFLogInfo("0", "26", 1, "[lccFGetConfigurationInt] Key ["+lccParamSId+"] Value [" + lccSValue + "] Is not a number.");
+                }
+            }
+            catch (Exception lccException)
+            {
+                lccFLogInfo("0", "0", 1, "[lccFGetConfigurationInt] ERROR: " + lccException.Message);
+            }
+            return lccIReturn;
         }
         public bool lccFLogInfo(string lccParamSFunctionId, string lccParamSLogLevel, int lccParamIFlag, String lccParamSLogRecord)
         {
@@ -264,7 +323,7 @@ namespace _25Live_New.lccTools
         public List<string> lccALLogRecords = new List<string>();
         public List<lccKeyValuePairClass> lccALTranslationIdPairs = new List<lccKeyValuePairClass>();
         public List<string> lccALLogLevels = new List<string>();
-        public System.Collections.Specialized.NameValueCollection allConfigurations = null;
+        public List<lccKeyValuePairClass> lccALConfigurations = new List<lccKeyValuePairClass>();
 
         public lccSettingsClass()
         {
@@ -322,6 +381,105 @@ namespace _25Live_New.lccTools
             return lccBReturnVal;
         }
 
+        public bool lccFBuildConfigurations(NameValueCollection lccParamNVCConfigurations)
+        {
+            bool lccBReturn = false;
+            lccKeyValuePairClass lccKVPCPair = new lccKeyValuePairClass();
+            try
+            {
+                lccALConfigurations.Clear();
+                foreach (string lccSNameValueLoop in lccParamNVCConfigurations)
+                {
+                    lccKVPCPair.lccFClearValues();
+                    lccKVPCPair.lccSKey = lccSNameValueLoop;
+                    lccKVPCPair.lccSValue = lccParamNVCConfigurations[lccSNameValueLoop];
+                    lccALConfigurations.Add(lccFReturnNewKVPCPair(lccKVPCPair));
+                }
+                lccBReturn = true;
+            }
+            catch (Exception lccException)
+            {
+                lccALLogRecords.Add("[lccFGetConfiguration] ERROR: " + lccException.Message);
+            }
+            return lccBReturn;
+        }
+
+        public String lccFParseValue(Int32 lccIFlag, String lccSParam)
+        {
+            // lccParamIFlag
+            // 0 - numbers only
+            // 1 - numbers and periods
+            // 2 - data file friendly
+            // 3 - capitalize first character
+            bool lccBPropercasePos = true;
+            int lccILoop = 0;
+            string lccSReturn = "";
+            for (lccILoop = 0; lccILoop < lccSParam.Length; lccILoop++)
+            {
+                switch (lccIFlag)
+                {
+                    case 0:
+                        if (lccSParam[lccILoop] >= '0'
+                            && lccSParam[lccILoop] <= '9'
+                            )
+                        {
+                            lccSReturn += lccSParam[lccILoop].ToString();
+                        }
+                        break;
+                    case 1:
+                        if ((lccSParam[lccILoop] >= '0'
+                            && lccSParam[lccILoop] <= '9'
+                            )
+                            || lccSParam[lccILoop] == '.'
+                            )
+                        {
+                            lccSReturn += lccSParam[lccILoop].ToString();
+                        }
+                        break;
+                    case 2:
+                        if (lccSParam[lccILoop] == '\r')
+                        {
+                            lccSReturn += "[lcc:CarriageReturn]";
+                        }
+                        else if (lccSParam[lccILoop] == '\n')
+                        {
+                            lccSReturn += "[lcc:LineFeed]";
+                        }
+                        else if (lccSParam[lccILoop] == '\t')
+                        {
+                            lccSReturn += "[lcc:Tab]";
+                        }
+                        else
+                        {
+                            lccSReturn += lccSParam[lccILoop].ToString();
+                        }
+                        break;
+                    case 3:
+                        if (lccBPropercasePos == true)
+                        {
+                            lccSReturn += lccSParam[lccILoop].ToString().ToUpper();
+                        }
+                        else
+                        {
+                            lccSReturn += lccSParam[lccILoop].ToString().ToLower();
+                        }
+                        lccBPropercasePos = false;
+                        if (lccSParam[lccILoop].ToString().Equals(" ") == true)
+                        {
+                            lccBPropercasePos = true;
+                        }
+                        break;
+                }
+            }
+            return lccSReturn;
+        }
+        public lccKeyValuePairClass lccFReturnNewKVPCPair(lccKeyValuePairClass lccParamKVPCPair)
+        {
+            lccKeyValuePairClass lccKVPCReturn = new lccKeyValuePairClass();
+            lccKVPCReturn.lccSKey = lccParamKVPCPair.lccSKey;
+            lccKVPCReturn.lccSValue = lccParamKVPCPair.lccSValue;
+            return lccKVPCReturn;
+        }
         public void lccFClearValues()
         {
             lccBDebugMode = false;
@@ -333,7 +491,7 @@ namespace _25Live_New.lccTools
             lccSDebugIP = "";
             lccSBLogOutput.Length = 0;
             lccSViewersIP = System.Web.HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
-            allConfigurations = null;
+            lccALConfigurations.Clear();
             lccALLogRecords.Clear();
             lccALLogLevels.Clear();
             lccALTranslationIdPairs.Clear();
