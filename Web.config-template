@@ -74,8 +74,8 @@
     <add key="ColEndYear" value="64" />
     <add key="ColEnrollment" value="41" />
     <add key="ColEvent" value="82" />
-    <add key="ColFinishtHours" value="34" />
-    <add key="ColFinishtMinutes" value="36" />
+    <add key="ColFinishHours" value="34" />
+    <add key="ColFinishMinutes" value="36" />
     <add key="ColInstructor" value="88" />
     <add key="ColMeeting" value="73" />
     <add key="ColRoomName" value="46" />
