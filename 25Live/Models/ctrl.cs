@@ -181,10 +181,8 @@ namespace _25Live.Models
 
         public IDictionary<string, string> createDataInFile(String yearQuarter)
         {
-            int lccIObjectsCount = 0;
             IDictionary<string, string> dict = new Dictionary<string, string>(); // Will be used for return values
             String message = "";
-            var filename = "";
             int colAP = 0;
             int colASM = 0;
             int colBeginYear = 0;
@@ -224,7 +222,11 @@ namespace _25Live.Models
             int lenSection = 0;
             int lengthTerm = 0;
 
+            string filename = "";
             string path = "";
+            string newFileName = "";
+            string newPath = "";
+            string archivePath = "";
             //string line = "";
             string line = "";
             StringBuilder lccALLines = new StringBuilder();
@@ -294,7 +296,6 @@ namespace _25Live.Models
 
                         foreach (JObject root in objects)
                         {
-                            lccIObjectsCount++;
                             var apDesignator = root.GetValue("APDesignator").ToString().Trim();
                             var assignment = root.GetValue("AssignmentField").ToString().Trim();
                             var catalog = root.GetValue("Catalog").ToString().Trim(); // Course Number
@@ -316,26 +317,26 @@ namespace _25Live.Models
                             var term = root.GetValue("term").ToString().Trim(); // YearQuarterID
                             var instructorEmail = root.GetValue("WorkEmail").ToString().Trim();
 
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [APDesignator] Value ["+root.GetValue("APDesignator").ToString().Length.ToString()+"][" + root.GetValue("APDesignator").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [AssignmentField] Value ["+root.GetValue("AssignmentField").ToString().Length.ToString()+"][" + root.GetValue("AssignmentField").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Catalog] Value ["+root.GetValue("Catalog").ToString().Length.ToString()+"][" + root.GetValue("Catalog").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [ClassID] Value ["+root.GetValue("ClassID").ToString().Length.ToString()+"][" + root.GetValue("ClassID").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CourseName] Value ["+root.GetValue("CourseName").ToString().Length.ToString()+"][" + root.GetValue("CourseName").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CRN] Value ["+root.GetValue("CRN").ToString().Length.ToString()+"][" + root.GetValue("CRN").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Days] Value ["+root.GetValue("Days").ToString().Length.ToString()+"][" + root.GetValue("Days").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [DepartmentID] Value ["+root.GetValue("DepartmentID").ToString().Length.ToString()+"][" + root.GetValue("DepartmentID").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Enrollment] Value ["+root.GetValue("Enrollment").ToString().Length.ToString()+"][" + root.GetValue("Enrollment").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishHours] Value ["+root.GetValue("FinishHours").ToString().Length.ToString()+"][" + root.GetValue("FinishHours").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishMinutes] Value ["+root.GetValue("FinishMinutes").ToString().Length.ToString()+"][" + root.GetValue("FinishMinutes").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishWeek] Value ["+root.GetValue("FinishWeek").ToString().Length.ToString()+"][" + root.GetValue("FinishWeek").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [MeetingNumber] Value ["+root.GetValue("MeetingNumber").ToString().Length.ToString()+"][" + root.GetValue("MeetingNumber").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [RoomName] Value ["+root.GetValue("RoomName").ToString().Length.ToString()+"][" + root.GetValue("RoomName").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Section] Value ["+root.GetValue("Section").ToString().Length.ToString()+"][" + root.GetValue("Section").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartHours] Value ["+root.GetValue("StartHours").ToString().Length.ToString()+"][" + root.GetValue("StartHours").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartMinutes] Value ["+root.GetValue("StartMinutes").ToString().Length.ToString()+"][" + root.GetValue("StartMinutes").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartWeek] Value ["+root.GetValue("StartWeek").ToString().Length.ToString()+"][" + root.GetValue("StartWeek").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [term] Value ["+root.GetValue("term").ToString().Length.ToString()+"][" + root.GetValue("term").ToString() + "]");
-                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [WorkEmail] Value [" + root.GetValue("WorkEmail").ToString().Length+ "][" + root.GetValue("WorkEmail").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [APDesignator] Value [" + root.GetValue("APDesignator").ToString().Length.ToString() + "][" + root.GetValue("APDesignator").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [AssignmentField] Value [" + root.GetValue("AssignmentField").ToString().Length.ToString() + "][" + root.GetValue("AssignmentField").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Catalog] Value [" + root.GetValue("Catalog").ToString().Length.ToString() + "][" + root.GetValue("Catalog").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [ClassID] Value [" + root.GetValue("ClassID").ToString().Length.ToString() + "][" + root.GetValue("ClassID").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CourseName] Value [" + root.GetValue("CourseName").ToString().Length.ToString() + "][" + root.GetValue("CourseName").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [CRN] Value [" + root.GetValue("CRN").ToString().Length.ToString() + "][" + root.GetValue("CRN").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Days] Value [" + root.GetValue("Days").ToString().Length.ToString() + "][" + root.GetValue("Days").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [DepartmentID] Value [" + root.GetValue("DepartmentID").ToString().Length.ToString() + "][" + root.GetValue("DepartmentID").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Enrollment] Value [" + root.GetValue("Enrollment").ToString().Length.ToString() + "][" + root.GetValue("Enrollment").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishHours] Value [" + root.GetValue("FinishHours").ToString().Length.ToString() + "][" + root.GetValue("FinishHours").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishMinutes] Value [" + root.GetValue("FinishMinutes").ToString().Length.ToString() + "][" + root.GetValue("FinishMinutes").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [FinishWeek] Value [" + root.GetValue("FinishWeek").ToString().Length.ToString() + "][" + root.GetValue("FinishWeek").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [MeetingNumber] Value [" + root.GetValue("MeetingNumber").ToString().Length.ToString() + "][" + root.GetValue("MeetingNumber").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [RoomName] Value [" + root.GetValue("RoomName").ToString().Length.ToString() + "][" + root.GetValue("RoomName").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [Section] Value [" + root.GetValue("Section").ToString().Length.ToString() + "][" + root.GetValue("Section").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartHours] Value [" + root.GetValue("StartHours").ToString().Length.ToString() + "][" + root.GetValue("StartHours").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartMinutes] Value [" + root.GetValue("StartMinutes").ToString().Length.ToString() + "][" + root.GetValue("StartMinutes").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [StartWeek] Value [" + root.GetValue("StartWeek").ToString().Length.ToString() + "][" + root.GetValue("StartWeek").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [term] Value [" + root.GetValue("term").ToString().Length.ToString() + "][" + root.GetValue("term").ToString() + "]");
+                            lccTCTools.lccFLogInfo("0", "22", 1, "[createDataInFile] JSON Key [WorkEmail] Value [" + root.GetValue("WorkEmail").ToString().Length + "][" + root.GetValue("WorkEmail").ToString() + "]");
 
                             //generate line
                             var spacesToAdd = 0; // Initialising it for reuse.
@@ -368,10 +369,7 @@ namespace _25Live.Models
                             line = concatNewField(line, colCourse, lenCourse, courseName);
                             line = concatNewField(line, colTerm, lengthTerm, term);
                             line = concatNewField(line, colCRN, lenCRN, crn);
-                            if (lccIObjectsCount < objects.Count)
-                            {
-                                line += System.Environment.NewLine;
-                            }
+                            line += System.Environment.NewLine;
                             lccALLines.Append(line);
 
 
@@ -380,32 +378,58 @@ namespace _25Live.Models
 
                             if (codeRanFlag == 0)
                             {
+                                codeRanFlag = 1;
                                 filename = "datain" + term + ".dat";
                                 path = lccTCTools.lccFGetConfiguration("FilePath") + filename;
-                                // Check if the file exists.
-                                //If it exists that archive that file.
-                                var archivePath = lccTCTools.lccFGetConfiguration("ArchivePath");
-                                if (System.IO.File.Exists(path))
+                                if (lccTCTools.lccFGetConfiguration("ArchivePath").Length == 0)
                                 {
-                                    String timeStamp = GetTimestamp(DateTime.Now);
-                                    var newFileName = term + "_" + timeStamp + ".dat";
-                                    var newPath = archivePath + newFileName;
-                                    // Move the existing file to archive folder
-                                    System.IO.File.Move(path, newPath);
-                                    lccTCTools.lccFLogInfo("0", "8", 1, "[createDataInFile] Archiving File [" + path + "] to [" + newPath + "]");
-                                    message += "File " + newFileName + " has been moved to " + archivePath + ".";
-
+                                    lccTCTools.lccFLogInfo("0", "27", 1, "[createDataInFile][archiving] ArchivePath not provided, archiving skipped.");
                                 }
-                                codeRanFlag = 1;
+                                else
+                                {
+                                    try
+                                    {
+                                            // Check if the file exists.
+                                            //If it exists that archive that file.
+                                            archivePath = lccTCTools.lccFGetConfiguration("ArchivePath");
+                                            if (System.IO.File.Exists(path))
+                                            {
+                                                String timeStamp = GetTimestamp(DateTime.Now);
+                                                newFileName = term + "_" + timeStamp + ".dat";
+                                                newPath = archivePath + newFileName;
+                                                // Move the existing file to archive folder
+                                                System.IO.File.Move(path, newPath);
+                                                lccTCTools.lccFLogInfo("0", "8", 1, "[createDataInFile] Archiving File [" + path + "] to [" + newPath + "]");
+                                                message += "File " + newFileName + " has been moved to " + archivePath + ".";
+
+                                            }
+                                    }
+                                    catch (Exception lccArchivingExcpetion)
+                                    {
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR-current folder: " + Environment.CurrentDirectory);
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR-filename: " + filename);
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR-path: " + path);
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR-newFileName: " + newFileName);
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR-newPath: " + newPath);
+                                        lccTCTools.lccFLogInfo("0", "0", 1, "[createDataInFile][archiving] ERROR: " + lccArchivingExcpetion.Message);
+                                    }
+                                }
                             }
                         }
-                        if (line.Length > 0)
+                        if (lccALLines.Length == 0)
                         {
-                            lccTCTools.lccFLogInfo("0", "9", 1, "[createDataInFile] Writing to file [" + path+"]");
-                            System.IO.StreamWriter file = new System.IO.StreamWriter(path);
-                            message += " A new file named " + filename + " is created at location " + lccTCTools.lccFGetConfiguration("FilePath") + ".";
-                            file.WriteLine(lccALLines.ToString());
-                            file.Close();
+                            lccTCTools.lccFLogInfo("0", "9", 1, "[createDataInFile] No records loaded from SQL query to write to file - Path [" + path + "]");
+                        }
+                        if (lccALLines.Length > 0)
+                        {
+                            if (path.Length > 0)
+                            {
+                                lccTCTools.lccFLogInfo("0", "9", 1, "[createDataInFile] Writing to file [" + path + "]");
+                                System.IO.StreamWriter file = new System.IO.StreamWriter(path);
+                                message += " A new file named " + filename + " is created at location " + lccTCTools.lccFGetConfiguration("FilePath") + ".";
+                                file.Write(lccALLines.ToString());
+                                file.Close();
+                            }
                         }
 
                     }

@@ -133,7 +133,10 @@ namespace _25Live_New.lccTools
                     if (lccSCSettings.lccALConfigurations[lccILoop].lccSKey.Equals(lccParamSId) == true)
                     {
                         lccBFound = true;
-                        lccSReturn = lccSCSettings.lccALConfigurations[lccILoop].lccSValue;
+                        if (lccSCSettings.lccALConfigurations[lccILoop].lccSValue != null)
+                        {
+                            lccSReturn = lccSCSettings.lccALConfigurations[lccILoop].lccSValue;
+                        }
                     }
                 }
             }
