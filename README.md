@@ -4,6 +4,9 @@ This tool is made available for the convenience of the Washington Community and
 Technical College System. Bellevue College does not support, warranty or assist
 in the use of the tool.
 
+[David Mielcarek, 20150817] Added PDF detailing installation/configuring (25LiveInterface-manual.pdf).
+Added Head Count add-on (see 25LiveUSPHeadCount Web.config Key/Value).
+
 [David Mielcarek, 20150806] Regarding this project, and the upgrades/add-ons below,
 I am available for assistance if needed.  I will include a PDF detailing the steps
 LCC performed to install the project, including errors/suggestion (all of which are
