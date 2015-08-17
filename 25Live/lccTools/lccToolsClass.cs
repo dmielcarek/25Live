@@ -22,32 +22,32 @@ namespace _25Live_New.lccTools
             try
             {
                 lccIOrigLength = lccParamSId.Length;
-                lccFLogInfo("0", "18", 1, "[lccFTranslateId] Started - Id [" + lccParamSId + "]");
+                lccFLogInfo("1", "18", 1, "[lccFTranslateId] Started - Id [" + lccParamSId + "]");
                 if (lccSCSettings.lccALTranslationIdPairs.Count > 0)
                 {
-                    lccFLogInfo("0", "18", 1, "[lccFTranslateId] Trimmed Version [" + lccSUseLine + "]");
+                    lccFLogInfo("2", "18", 1, "[lccFTranslateId] Trimmed Version [" + lccSUseLine + "]");
                     for (lccILoop = 0; lccILoop < lccSCSettings.lccALTranslationIdPairs.Count && lccBFound == false; lccILoop++)
                     {
-                        lccFLogInfo("0", "19", 1, "[lccFTranslateId] Compare Id [" + lccSUseLine + "] to Key [" + lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey + "]");
+                        lccFLogInfo("3", "19", 1, "[lccFTranslateId] Compare Id [" + lccSUseLine + "] to Key [" + lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey + "]");
                         if (lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSKey.Equals(lccSUseLine) == true)
                         {
-                            lccFLogInfo("0", "20", 1, "[lccFTranslateId] Match");
+                            lccFLogInfo("4", "20", 1, "[lccFTranslateId] Match");
                             lccBFound = true;
                             lccSReturn = lccSCSettings.lccALTranslationIdPairs[lccILoop].lccSValue;
                             if (lccSReturn.Length < lccIOrigLength)
                             {
-                                lccFLogInfo("0", "20", 1, "[lccFTranslateId] Original Length [" + lccIOrigLength.ToString() + "] longer, Right Padding value [" + lccSReturn + "]");
+                                lccFLogInfo("5", "20", 1, "[lccFTranslateId] Original Length [" + lccIOrigLength.ToString() + "] longer, Right Padding value [" + lccSReturn + "]");
                                 lccSReturn = lccSReturn.PadRight(lccIOrigLength, ' ');
-                                lccFLogInfo("0", "20", 1, "[lccFTranslateId] Right Padded value [" + lccSReturn + "]");
+                                lccFLogInfo("6", "20", 1, "[lccFTranslateId] Right Padded value [" + lccSReturn + "]");
                             }
                         }
                     }
                 }
-                lccFLogInfo("0", "21", 1, "[lccFTranslateId] Started - Finished");
+                lccFLogInfo("7", "21", 1, "[lccFTranslateId] Started - Finished");
             }
             catch (Exception lccException)
             {
-                lccFLogInfo("0", "0", 1, "[lccFTranslateId] ERROR: "+lccException.Message);
+                lccFLogInfo("8", "0", 1, "[lccFTranslateId] ERROR: "+lccException.Message);
             }
             return lccSReturn;
         }
@@ -61,14 +61,14 @@ namespace _25Live_New.lccTools
             StreamReader lccSRSource = null;
             try
             {
-                lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] Started");
+                lccFLogInfo("9", "23", 1, "[lccFLoadTranslationPairs] Started");
                 if (File.Exists(lccSCSettings.lccSIdTranslationsPath) == false)
                 {
-                    lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] File does not exist [" + lccSCSettings.lccSIdTranslationsPath+"]");
+                    lccFLogInfo("10", "23", 1, "[lccFLoadTranslationPairs] File does not exist [" + lccSCSettings.lccSIdTranslationsPath+"]");
                 }
                 else
                 {
-                    lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] Loading records");
+                    lccFLogInfo("11", "23", 1, "[lccFLoadTranslationPairs] Loading records");
                     lccFSSource = new FileStream(lccSCSettings.lccSIdTranslationsPath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                     lccSRSource = new StreamReader(lccFSSource);
                     while ((lccSSource = lccSRSource.ReadLine()) != null)
@@ -90,19 +90,19 @@ namespace _25Live_New.lccTools
 
                     if (lccSCSettings.lccALTranslationIdPairs.Count == 0)
                     {
-                        lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] No translations provided.  Translations skipped.");
+                        lccFLogInfo("12", "23", 1, "[lccFLoadTranslationPairs] No translations provided.  Translations skipped.");
                     }
                     else
                     {
-                        lccFLogInfo("0", "23", 1, "[lccFLoadTranslationPairs] Loaded Records: " + lccSCSettings.lccALTranslationIdPairs.Count.ToString());
+                        lccFLogInfo("13", "23", 1, "[lccFLoadTranslationPairs] Loaded Records: " + lccSCSettings.lccALTranslationIdPairs.Count.ToString());
                     }
                 }
-                lccFLogInfo("0", "24", 1, "[lccFLoadTranslationPairs] Started");
+                lccFLogInfo("14", "24", 1, "[lccFLoadTranslationPairs] Started");
                 lccBReturn = true;
             }
             catch (Exception lccException)
             {
-                lccFLogInfo("0", "0", 1, "[lccFLoadTranslationPairs] ERROR: " + lccException.Message);
+                lccFLogInfo("15", "0", 1, "[lccFLoadTranslationPairs] ERROR: " + lccException.Message);
             }
             return lccBReturn;
         }
@@ -142,7 +142,7 @@ namespace _25Live_New.lccTools
             }
             catch (Exception lccException)
             {
-                lccFLogInfo("0", "0", 1, "[lccFGetConfiguration] ERROR: " + lccException.Message);
+                lccFLogInfo("16", "0", 1, "[lccFGetConfiguration] ERROR: " + lccException.Message);
             }
             return lccSReturn;
         }
@@ -159,12 +159,12 @@ namespace _25Live_New.lccTools
                 }
                 else
                 {
-                    lccFLogInfo("0", "26", 1, "[lccFGetConfigurationInt] Key ["+lccParamSId+"] Value [" + lccSValue + "] Is not a number.");
+                    lccFLogInfo("17", "26", 1, "[lccFGetConfigurationInt] Key ["+lccParamSId+"] Value [" + lccSValue + "] Is not a number.");
                 }
             }
             catch (Exception lccException)
             {
-                lccFLogInfo("0", "0", 1, "[lccFGetConfigurationInt] ERROR: " + lccException.Message);
+                lccFLogInfo("18", "0", 1, "[lccFGetConfigurationInt] ERROR: " + lccException.Message);
             }
             return lccIReturn;
         }
@@ -280,7 +280,14 @@ namespace _25Live_New.lccTools
                                     lccSCSettings.lccALLogRecords.Clear();
                                     break;
                             }
-                            lccSCSettings.lccSBLogOutput.Append("\r\n<br>" + lccSBTargetStr);
+                            switch (lccParamIFlag)
+                            {
+                                case 0:
+                                case 1:
+                                case 2:
+                                    lccSCSettings.lccSBLogOutput.Append("\r\n<br>" + lccSBTargetStr);
+                                    break;
+                            }
                         }
                         catch (Exception lccException)
                         {
@@ -358,7 +365,7 @@ namespace _25Live_New.lccTools
             }
             catch (Exception lccException)
             {
-                //lccFLogInfo("0", "", 1, "[lccCheckLogLevel] ERROR: " + lccException.Message);
+                //lccFLogInfo("19", "", 1, "[lccCheckLogLevel] ERROR: " + lccException.Message);
             }
             return lccBReturnVal;
         }
